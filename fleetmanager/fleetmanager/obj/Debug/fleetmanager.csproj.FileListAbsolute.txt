@@ -1,9 +1,10 @@
 C:\Users\Anderson\source\repos\PIM-unip\fleetmanager\fleetmanager\bin\Debug\fleetmanager.exe.config
 C:\Users\Anderson\source\repos\PIM-unip\fleetmanager\fleetmanager\bin\Debug\fleetmanager.exe
 C:\Users\Anderson\source\repos\PIM-unip\fleetmanager\fleetmanager\bin\Debug\fleetmanager.pdb
-C:\Users\Anderson\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.csprojAssemblyReference.cache
 C:\Users\Anderson\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.Form1.resources
 C:\Users\Anderson\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.Properties.Resources.resources
 C:\Users\Anderson\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.csproj.GenerateResource.cache
 C:\Users\Anderson\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.exe
 C:\Users\Anderson\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.pdb
+C:\Users\Anderson\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.view.login.resources
+C:\Users\Anderson\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.csprojAssemblyReference.cache

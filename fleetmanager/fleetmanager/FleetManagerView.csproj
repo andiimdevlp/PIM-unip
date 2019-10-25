@@ -101,5 +101,11 @@
   <ItemGroup>
     <None Include="img\delivery-truck.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FleeTmanagerController\FleeTmanagerController.csproj">
+      <Project>{425b2e90-6c62-4149-8fcb-d936c969e6f4}</Project>
+      <Name>FleeTmanagerController</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

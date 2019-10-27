@@ -1,0 +1,12 @@
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\FleetManagerView.csprojAssemblyReference.cache
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.view.Form1.resources
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\FleetManagerView.csproj.GenerateResource.cache
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.exe
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.pdb
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\bin\Debug\fleetmanager.exe.config
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\bin\Debug\fleetmanager.exe
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\bin\Debug\fleetmanager.pdb
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\bin\Debug\FleeTmanagerController.dll
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\bin\Debug\FleeTmanagerController.pdb
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\fleetmanager.Properties.Resources.resources
+C:\Users\andiim\source\repos\PIM-unip\fleetmanager\fleetmanager\obj\Debug\FleetManagerView.csproj.CopyComplete

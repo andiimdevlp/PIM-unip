@@ -61,16 +61,6 @@ namespace fleetmanager.view
             }
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnMinimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();

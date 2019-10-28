@@ -1,0 +1,12 @@
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\View.exe.config
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\View.exe
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\View.pdb
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.csprojAssemblyReference.cache
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.FrmLogin.resources
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.Properties.Resources.resources
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.csproj.GenerateResource.cache
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.csproj.CopyComplete
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.exe
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.pdb

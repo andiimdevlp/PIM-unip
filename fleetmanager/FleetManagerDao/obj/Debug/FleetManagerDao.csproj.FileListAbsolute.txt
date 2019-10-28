@@ -1,5 +1,0 @@
-C:\Users\andiim\source\repos\PIM-unip\fleetmanager\FleetManagerDao\bin\Debug\FleetManagerDao.dll
-C:\Users\andiim\source\repos\PIM-unip\fleetmanager\FleetManagerDao\bin\Debug\FleetManagerDao.pdb
-C:\Users\andiim\source\repos\PIM-unip\fleetmanager\FleetManagerDao\obj\Debug\FleetManagerDao.csprojAssemblyReference.cache
-C:\Users\andiim\source\repos\PIM-unip\fleetmanager\FleetManagerDao\obj\Debug\FleetManagerDao.dll
-C:\Users\andiim\source\repos\PIM-unip\fleetmanager\FleetManagerDao\obj\Debug\FleetManagerDao.pdb

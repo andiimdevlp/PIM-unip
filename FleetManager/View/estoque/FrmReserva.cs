@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace View.cadastros
+namespace View.estoque
 {
-    public partial class FrmCarros : Form
+    public partial class FrmReserva : Form
     {
-        public FrmCarros()
+        public FrmReserva()
         {
             InitializeComponent();
-            FormBorderStyle = FormBorderStyle.None;
         }
     }
 }

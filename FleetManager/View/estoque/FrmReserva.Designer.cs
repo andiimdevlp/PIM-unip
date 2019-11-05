@@ -1,6 +1,6 @@
-﻿namespace View.financeiro
+﻿namespace View.estoque
 {
-    partial class FrmContasPagar
+    partial class FrmReserva
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // FrmContasPagar
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmContasPagar";
-            this.Text = "FrmContasPagar";
-            this.ResumeLayout(false);
-
+            this.Text = "FrmReserva";
         }
 
         #endregion

@@ -117,47 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LogoMarca" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\LogoMarca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Relatorio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\Relatorio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LogoFrotaMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\LogoFrotaMenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\Logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cadastros" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\Cadastros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AvatarLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\AvatarLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon-access" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\icon-access.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Estoque-" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\Estoque-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fechar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\fechar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="access-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\access-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Financeiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\Financeiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\Menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ProgressLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\ProgressLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 17</value>
+  </metadata>
 </root>

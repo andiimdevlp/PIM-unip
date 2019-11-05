@@ -200,7 +200,7 @@
             this.lnkRecuperarSenha.AutoSize = true;
             this.lnkRecuperarSenha.BackColor = System.Drawing.Color.Transparent;
             this.lnkRecuperarSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(56)))));
-            this.lnkRecuperarSenha.Location = new System.Drawing.Point(239, 493);
+            this.lnkRecuperarSenha.Location = new System.Drawing.Point(236, 512);
             this.lnkRecuperarSenha.Name = "lnkRecuperarSenha";
             this.lnkRecuperarSenha.Size = new System.Drawing.Size(115, 13);
             this.lnkRecuperarSenha.TabIndex = 0;

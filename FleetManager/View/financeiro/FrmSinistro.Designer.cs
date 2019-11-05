@@ -1,6 +1,6 @@
 ﻿namespace View.financeiro
 {
-    partial class FrmSinitro
+    partial class FrmSinistro
     {
         /// <summary>
         /// Required designer variable.

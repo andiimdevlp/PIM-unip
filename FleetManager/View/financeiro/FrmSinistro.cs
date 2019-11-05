@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace View.financeiro
 {
-    public partial class FrmSinitro : Form
+    public partial class FrmSinistro : Form
     {
-        public FrmSinitro()
+        public FrmSinistro()
         {
             InitializeComponent();
         }

@@ -42,6 +42,9 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnSalvarCarro = new System.Windows.Forms.Button();
+            this.btnExcluirCarro = new System.Windows.Forms.Button();
+            this.chModeloVeiculo = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // lblPlaca
@@ -100,6 +103,7 @@
             // 
             // cbCombustivel
             // 
+            this.cbCombustivel.BackColor = System.Drawing.SystemColors.Control;
             this.cbCombustivel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cbCombustivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCombustivel.ForeColor = System.Drawing.SystemColors.WindowFrame;
@@ -168,11 +172,48 @@
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 18;
             // 
+            // btnSalvarCarro
+            // 
+            this.btnSalvarCarro.Location = new System.Drawing.Point(383, 157);
+            this.btnSalvarCarro.Name = "btnSalvarCarro";
+            this.btnSalvarCarro.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvarCarro.TabIndex = 19;
+            this.btnSalvarCarro.Text = "Salvar";
+            this.btnSalvarCarro.UseVisualStyleBackColor = true;
+            // 
+            // btnExcluirCarro
+            // 
+            this.btnExcluirCarro.Location = new System.Drawing.Point(487, 157);
+            this.btnExcluirCarro.Name = "btnExcluirCarro";
+            this.btnExcluirCarro.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluirCarro.TabIndex = 20;
+            this.btnExcluirCarro.Text = "Excluir";
+            this.btnExcluirCarro.UseVisualStyleBackColor = true;
+            // 
+            // chModeloVeiculo
+            // 
+            this.chModeloVeiculo.BackColor = System.Drawing.SystemColors.Control;
+            this.chModeloVeiculo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chModeloVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chModeloVeiculo.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.chModeloVeiculo.FormattingEnabled = true;
+            this.chModeloVeiculo.Items.AddRange(new object[] {
+            "Passeio",
+            "Caminhão",
+            "Van"});
+            this.chModeloVeiculo.Location = new System.Drawing.Point(193, 124);
+            this.chModeloVeiculo.Name = "chModeloVeiculo";
+            this.chModeloVeiculo.Size = new System.Drawing.Size(95, 48);
+            this.chModeloVeiculo.TabIndex = 21;
+            // 
             // FrmCarros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 608);
+            this.ClientSize = new System.Drawing.Size(1084, 672);
+            this.Controls.Add(this.chModeloVeiculo);
+            this.Controls.Add(this.btnExcluirCarro);
+            this.Controls.Add(this.btnSalvarCarro);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -213,5 +254,8 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btnSalvarCarro;
+        private System.Windows.Forms.Button btnExcluirCarro;
+        private System.Windows.Forms.CheckedListBox chModeloVeiculo;
     }
 }

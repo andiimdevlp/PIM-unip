@@ -16,3 +16,4 @@ C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\CircularProgre
 C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\WinFormAnimation.dll
 C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.financeiro.FrmContasPagar.resources
 C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.FrmProgressLogin.resources
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.cadastros.FrmContrato.resources

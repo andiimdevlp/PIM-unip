@@ -138,6 +138,9 @@
     <EmbeddedResource Include="cadastros\FrmCarros.resx">
       <DependentUpon>FrmCarros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cadastros\FrmContrato.resx">
+      <DependentUpon>FrmContrato.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="financeiro\FrmContasPagar.resx">
       <DependentUpon>FrmContasPagar.cs</DependentUpon>
     </EmbeddedResource>

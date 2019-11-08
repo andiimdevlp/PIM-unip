@@ -92,5 +92,10 @@ namespace View
         {
             AbrirFromulario<FrmContasPagar>();
         }
+
+        private void btnCadastroContrato_Click(object sender, EventArgs e)
+        {
+            AbrirFromulario<FrmContrato>();
+        }
     }
 }

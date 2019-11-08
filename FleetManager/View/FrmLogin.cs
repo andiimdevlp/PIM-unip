@@ -79,8 +79,8 @@ namespace View
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmProgressLogin progress = new FrmProgressLogin();
-            progress.ShowDialog();
+            //FrmProgressLogin progress = new FrmProgressLogin();
+            //progress.ShowDialog();
             FrmPainelPrincipal principal = new FrmPainelPrincipal();
             principal.Show();
             //principal.FormClosed += bntLogout;

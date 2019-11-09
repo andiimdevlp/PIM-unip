@@ -73,12 +73,6 @@
     <Compile Include="cadastros\FrmDespesa.Designer.cs">
       <DependentUpon>FrmDespesa.cs</DependentUpon>
     </Compile>
-    <Compile Include="cadastros\FrmFuncionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="cadastros\FrmFuncionario.Designer.cs">
-      <DependentUpon>FrmFuncionario.cs</DependentUpon>
-    </Compile>
     <Compile Include="cadastros\FrmViagens.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="cadastros\FrmContrato.resx">
       <DependentUpon>FrmContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastros\FrmDespesa.resx">
+      <DependentUpon>FrmDespesa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="financeiro\FrmContasPagar.resx">
       <DependentUpon>FrmContasPagar.cs</DependentUpon>

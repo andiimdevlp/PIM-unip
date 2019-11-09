@@ -121,6 +121,7 @@
             // cbAlugado
             // 
             this.cbAlugado.AutoSize = true;
+            this.cbAlugado.Enabled = false;
             this.cbAlugado.Location = new System.Drawing.Point(371, 124);
             this.cbAlugado.Name = "cbAlugado";
             this.cbAlugado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -174,6 +175,8 @@
             // 
             // btnSalvarCarro
             // 
+            this.btnSalvarCarro.FlatAppearance.BorderSize = 0;
+            this.btnSalvarCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvarCarro.Location = new System.Drawing.Point(383, 157);
             this.btnSalvarCarro.Name = "btnSalvarCarro";
             this.btnSalvarCarro.Size = new System.Drawing.Size(75, 23);
@@ -183,6 +186,8 @@
             // 
             // btnExcluirCarro
             // 
+            this.btnExcluirCarro.FlatAppearance.BorderSize = 0;
+            this.btnExcluirCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluirCarro.Location = new System.Drawing.Point(487, 157);
             this.btnExcluirCarro.Name = "btnExcluirCarro";
             this.btnExcluirCarro.Size = new System.Drawing.Size(75, 23);

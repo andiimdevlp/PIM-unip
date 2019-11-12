@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Control;
 
 namespace View
 {
@@ -78,13 +79,41 @@ namespace View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //FrmProgressLogin progress = new FrmProgressLogin();
-            //progress.ShowDialog();
-            FrmPainelPrincipal principal = new FrmPainelPrincipal();
-            principal.Show();
-            //principal.FormClosed += bntLogout;
+            if (txtUsuarioLogin.Text != "Digite seu Usuario" && txtSenhaLogin.Text != "Digite sua Senha")
+            {
+                UsuarioModel user = new UsuarioModel();
+                var validaLogin = user.LoginUser(txtUsuarioLogin.Text, txtSenhaLogin.Text);
+                if(validaLogin == true)
+                {
+                    FrmPainelPrincipal principal = new FrmPainelPrincipal();
+                    principal.Show();
+                    principal.FormClosed += Logout;
+                    this.Hide();
+                }
+                else
+                {
+                    msgErro("Usuário ou Senha Incorreto! \n Digite Novamente!");
 
+                    txtUsuarioLogin.Text = "Digite seu Usuario";
+                    txtSenhaLogin.Text = "Digite sua Senha";
+                }
+            }
+            else msgErro("Forneça os Dados de Acesso!");
+           
+        }
+        private void msgErro (string msg)
+        {
+            lblErroLogin.Text = "     " + msg;
+            lblErroLogin.Visible = true;
+        }
+        private void Logout(object sender, FormClosedEventArgs e)
+        {
+            txtUsuarioLogin.Text = "Digite seu Usuario";
+            txtSenhaLogin.Text = "Digite sua Senha";
+            txtSenhaLogin.UseSystemPasswordChar = false;
+            lblErroLogin.Visible = false;
+            this.Show();
+            //txtUsuarioLogin.Focus();
         }
     }
 }

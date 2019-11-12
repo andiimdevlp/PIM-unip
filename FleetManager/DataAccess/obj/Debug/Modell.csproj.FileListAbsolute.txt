@@ -1,0 +1,4 @@
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\DataAccess\bin\Debug\Model.dll
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\DataAccess\bin\Debug\Model.pdb
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\DataAccess\obj\Debug\Model.dll
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\DataAccess\obj\Debug\Model.pdb

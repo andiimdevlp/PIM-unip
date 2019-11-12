@@ -34,12 +34,13 @@
             this.retCardLogin = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.txtUsuarioLogin = new System.Windows.Forms.TextBox();
             this.txtSenhaLogin = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lnkRecuperarSenha = new System.Windows.Forms.LinkLabel();
+            this.lblErroLogin = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lnkRecuperarSenha = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,7 +99,7 @@
             // 
             this.txtUsuarioLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
             this.txtUsuarioLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsuarioLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuarioLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuarioLogin.ForeColor = System.Drawing.Color.LightGray;
             this.txtUsuarioLogin.Location = new System.Drawing.Point(116, 397);
             this.txtUsuarioLogin.Name = "txtUsuarioLogin";
@@ -113,7 +114,7 @@
             // 
             this.txtSenhaLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
             this.txtSenhaLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSenhaLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenhaLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenhaLogin.ForeColor = System.Drawing.Color.LightGray;
             this.txtSenhaLogin.Location = new System.Drawing.Point(116, 461);
             this.txtSenhaLogin.Name = "txtSenhaLogin";
@@ -124,28 +125,55 @@
             this.txtSenhaLogin.Enter += new System.EventHandler(this.txtSenhaLogin_Enter);
             this.txtSenhaLogin.Leave += new System.EventHandler(this.txtSenhaLogin_Leave);
             // 
-            // button1
+            // lnkRecuperarSenha
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(108)))), ((int)(((byte)(185)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+            this.lnkRecuperarSenha.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(135)))), ((int)(((byte)(195)))));
+            this.lnkRecuperarSenha.AutoSize = true;
+            this.lnkRecuperarSenha.BackColor = System.Drawing.Color.Transparent;
+            this.lnkRecuperarSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(56)))));
+            this.lnkRecuperarSenha.Location = new System.Drawing.Point(236, 552);
+            this.lnkRecuperarSenha.Name = "lnkRecuperarSenha";
+            this.lnkRecuperarSenha.Size = new System.Drawing.Size(115, 13);
+            this.lnkRecuperarSenha.TabIndex = 0;
+            this.lnkRecuperarSenha.TabStop = true;
+            this.lnkRecuperarSenha.Text = "Esqueceu sua Senha?";
+            // 
+            // lblErroLogin
+            // 
+            this.lblErroLogin.AutoSize = true;
+            this.lblErroLogin.ForeColor = System.Drawing.Color.Silver;
+            this.lblErroLogin.Image = global::View.Properties.Resources.importancia;
+            this.lblErroLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblErroLogin.Location = new System.Drawing.Point(163, 498);
+            this.lblErroLogin.Name = "lblErroLogin";
+            this.lblErroLogin.Size = new System.Drawing.Size(132, 13);
+            this.lblErroLogin.TabIndex = 10;
+            this.lblErroLogin.Text = "Usuario ou Senha Invalido";
+            this.lblErroLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblErroLogin.Visible = false;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(108)))), ((int)(((byte)(185)))));
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Image = global::View.Properties.Resources.icon_access;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(116, 505);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(80, 24);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "LOGIN";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLogin.Image = global::View.Properties.Resources.icon_access;
+            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogin.Location = new System.Drawing.Point(116, 545);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnLogin.Size = new System.Drawing.Size(80, 24);
+            this.btnLogin.TabIndex = 9;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox3
             // 
@@ -194,27 +222,15 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmLogin_MouseDown);
             // 
-            // lnkRecuperarSenha
-            // 
-            this.lnkRecuperarSenha.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(135)))), ((int)(((byte)(195)))));
-            this.lnkRecuperarSenha.AutoSize = true;
-            this.lnkRecuperarSenha.BackColor = System.Drawing.Color.Transparent;
-            this.lnkRecuperarSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(56)))));
-            this.lnkRecuperarSenha.Location = new System.Drawing.Point(236, 512);
-            this.lnkRecuperarSenha.Name = "lnkRecuperarSenha";
-            this.lnkRecuperarSenha.Size = new System.Drawing.Size(115, 13);
-            this.lnkRecuperarSenha.TabIndex = 0;
-            this.lnkRecuperarSenha.TabStop = true;
-            this.lnkRecuperarSenha.Text = "Esqueceu sua Senha?";
-            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
             this.ClientSize = new System.Drawing.Size(450, 700);
+            this.Controls.Add(this.lblErroLogin);
             this.Controls.Add(this.lnkRecuperarSenha);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtSenhaLogin);
             this.Controls.Add(this.txtUsuarioLogin);
             this.Controls.Add(this.pictureBox3);
@@ -248,8 +264,9 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox txtUsuarioLogin;
         private System.Windows.Forms.TextBox txtSenhaLogin;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.LinkLabel lnkRecuperarSenha;
+        private System.Windows.Forms.Label lblErroLogin;
     }
 }
 

@@ -44,20 +44,23 @@ namespace View
                 pnlMenuVertical.Width = 200;
             }
         }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void btnFechar_Click_1(object sender, EventArgs e)
         {
+
             Application.Exit();
             //FrmLogin chamarlogin = new FrmLogin();
             //chamarlogin.Show();
             //Visible = false;
         }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void btnMinimizar_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Deseja realmente fazer logoff no sistema?", "Logoff",MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            this.Close();
+        }
 
 
         //=====================================================================
@@ -102,5 +105,9 @@ namespace View
         {
             AbrirFromulario<FrmDespesa>();
         }
+
+        
+
+        
     }
 }

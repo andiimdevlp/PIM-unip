@@ -1,0 +1,5 @@
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\Entidade\bin\Debug\Entidade.dll
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\Entidade\bin\Debug\Entidade.pdb
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\Entidade\obj\Debug\Entidade.csprojAssemblyReference.cache
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\Entidade\obj\Debug\Entidade.dll
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\Entidade\obj\Debug\Entidade.pdb

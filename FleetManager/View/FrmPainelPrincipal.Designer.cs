@@ -35,33 +35,42 @@
             this.btnRelGastoFrota = new System.Windows.Forms.Button();
             this.btnRelFinanceiro = new System.Windows.Forms.Button();
             this.btnFinSinistros = new System.Windows.Forms.Button();
+            this.btnFinContasReceber = new System.Windows.Forms.Button();
             this.btnFinContasPagar = new System.Windows.Forms.Button();
             this.btnCadastroViagem = new System.Windows.Forms.Button();
             this.btnCadastroDespesa = new System.Windows.Forms.Button();
             this.btnCadastroContrato = new System.Windows.Forms.Button();
             this.btnCadastroCarro = new System.Windows.Forms.Button();
+            this.pnlTitle = new System.Windows.Forms.Panel();
+            this.pnlView = new System.Windows.Forms.Panel();
+            this.btnFechar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnMenu = new System.Windows.Forms.PictureBox();
+            this.btnLogout = new System.Windows.Forms.PictureBox();
             this.btnRelatorio = new System.Windows.Forms.Button();
             this.btnEstoque = new System.Windows.Forms.Button();
             this.btnFinanceiro = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.pnlTitle = new System.Windows.Forms.Panel();
-            this.btnFechar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnMenu = new System.Windows.Forms.PictureBox();
-            this.pnlView = new System.Windows.Forms.Panel();
-            this.btnFinContasReceber = new System.Windows.Forms.Button();
+            this.lblNomeLogado = new System.Windows.Forms.Label();
+            this.lblCargoLogado = new System.Windows.Forms.Label();
+            this.lblEmailLogado = new System.Windows.Forms.Label();
             this.pnlMenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenuVertical
             // 
             this.pnlMenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
+            this.pnlMenuVertical.Controls.Add(this.lblEmailLogado);
+            this.pnlMenuVertical.Controls.Add(this.lblCargoLogado);
+            this.pnlMenuVertical.Controls.Add(this.lblNomeLogado);
+            this.pnlMenuVertical.Controls.Add(this.btnLogout);
             this.pnlMenuVertical.Controls.Add(this.btnEstoqueEstoque);
             this.pnlMenuVertical.Controls.Add(this.btnEstoqueReserva);
             this.pnlMenuVertical.Controls.Add(this.btnRelFaturamento);
@@ -163,6 +172,19 @@
             this.btnFinSinistros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFinSinistros.UseVisualStyleBackColor = true;
             // 
+            // btnFinContasReceber
+            // 
+            this.btnFinContasReceber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinContasReceber.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinContasReceber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
+            this.btnFinContasReceber.Location = new System.Drawing.Point(32, 468);
+            this.btnFinContasReceber.Name = "btnFinContasReceber";
+            this.btnFinContasReceber.Size = new System.Drawing.Size(139, 26);
+            this.btnFinContasReceber.TabIndex = 11;
+            this.btnFinContasReceber.Text = "Contas a Receber";
+            this.btnFinContasReceber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFinContasReceber.UseVisualStyleBackColor = true;
+            // 
             // btnFinContasPagar
             // 
             this.btnFinContasPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -231,6 +253,74 @@
             this.btnCadastroCarro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadastroCarro.UseVisualStyleBackColor = true;
             this.btnCadastroCarro.Click += new System.EventHandler(this.btnCadastroCarro_Click);
+            // 
+            // pnlTitle
+            // 
+            this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
+            this.pnlTitle.Controls.Add(this.btnFechar);
+            this.pnlTitle.Controls.Add(this.btnMinimizar);
+            this.pnlTitle.Controls.Add(this.btnMenu);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(200, 0);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(1084, 49);
+            this.pnlTitle.TabIndex = 1;
+            this.pnlTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // pnlView
+            // 
+            this.pnlView.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlView.Location = new System.Drawing.Point(200, 49);
+            this.pnlView.Name = "pnlView";
+            this.pnlView.Size = new System.Drawing.Size(1084, 672);
+            this.pnlView.TabIndex = 2;
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFechar.Image = global::View.Properties.Resources.fechar;
+            this.btnFechar.Location = new System.Drawing.Point(1050, 12);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(25, 25);
+            this.btnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnFechar.TabIndex = 2;
+            this.btnFechar.TabStop = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click_1);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.Image = global::View.Properties.Resources.minimize;
+            this.btnMinimizar.Location = new System.Drawing.Point(1015, 12);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMinimizar.TabIndex = 1;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click_1);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Image = global::View.Properties.Resources.Menu;
+            this.btnMenu.Location = new System.Drawing.Point(6, 7);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(30, 30);
+            this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMenu.TabIndex = 0;
+            this.btnMenu.TabStop = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Image = global::View.Properties.Resources.Logout;
+            this.btnLogout.Location = new System.Drawing.Point(12, 679);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(30, 30);
+            this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnLogout.TabIndex = 18;
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnRelatorio
             // 
@@ -303,83 +393,40 @@
             // picLogo
             // 
             this.picLogo.Enabled = false;
-            this.picLogo.Image = global::View.Properties.Resources.Logo2;
+            this.picLogo.Image = global::View.Properties.Resources.guest_user;
             this.picLogo.Location = new System.Drawing.Point(4, 3);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(78, 69);
+            this.picLogo.Size = new System.Drawing.Size(78, 81);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
             // 
-            // pnlTitle
+            // lblNomeLogado
             // 
-            this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
-            this.pnlTitle.Controls.Add(this.btnFechar);
-            this.pnlTitle.Controls.Add(this.btnMinimizar);
-            this.pnlTitle.Controls.Add(this.btnMenu);
-            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitle.Location = new System.Drawing.Point(200, 0);
-            this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(1084, 49);
-            this.pnlTitle.TabIndex = 1;
-            this.pnlTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            this.lblNomeLogado.AutoSize = true;
+            this.lblNomeLogado.Location = new System.Drawing.Point(92, 49);
+            this.lblNomeLogado.Name = "lblNomeLogado";
+            this.lblNomeLogado.Size = new System.Drawing.Size(35, 13);
+            this.lblNomeLogado.TabIndex = 19;
+            this.lblNomeLogado.Text = "Nome";
             // 
-            // btnFechar
+            // lblCargoLogado
             // 
-            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFechar.Image = global::View.Properties.Resources.fechar;
-            this.btnFechar.Location = new System.Drawing.Point(1050, 12);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(25, 25);
-            this.btnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnFechar.TabIndex = 2;
-            this.btnFechar.TabStop = false;
-            this.btnFechar.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.lblCargoLogado.AutoSize = true;
+            this.lblCargoLogado.Location = new System.Drawing.Point(92, 24);
+            this.lblCargoLogado.Name = "lblCargoLogado";
+            this.lblCargoLogado.Size = new System.Drawing.Size(35, 13);
+            this.lblCargoLogado.TabIndex = 20;
+            this.lblCargoLogado.Text = "Cargo";
             // 
-            // btnMinimizar
+            // lblEmailLogado
             // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.Image = global::View.Properties.Resources.minimize;
-            this.btnMinimizar.Location = new System.Drawing.Point(1015, 12);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnMinimizar.TabIndex = 1;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.Image = global::View.Properties.Resources.Menu;
-            this.btnMenu.Location = new System.Drawing.Point(6, 7);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(30, 30);
-            this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnMenu.TabIndex = 0;
-            this.btnMenu.TabStop = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
-            // pnlView
-            // 
-            this.pnlView.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pnlView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlView.Location = new System.Drawing.Point(200, 49);
-            this.pnlView.Name = "pnlView";
-            this.pnlView.Size = new System.Drawing.Size(1084, 672);
-            this.pnlView.TabIndex = 2;
-            // 
-            // btnFinContasReceber
-            // 
-            this.btnFinContasReceber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinContasReceber.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinContasReceber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
-            this.btnFinContasReceber.Location = new System.Drawing.Point(32, 468);
-            this.btnFinContasReceber.Name = "btnFinContasReceber";
-            this.btnFinContasReceber.Size = new System.Drawing.Size(139, 26);
-            this.btnFinContasReceber.TabIndex = 11;
-            this.btnFinContasReceber.Text = "Contas a Receber";
-            this.btnFinContasReceber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinContasReceber.UseVisualStyleBackColor = true;
+            this.lblEmailLogado.AutoSize = true;
+            this.lblEmailLogado.Location = new System.Drawing.Point(92, 71);
+            this.lblEmailLogado.Name = "lblEmailLogado";
+            this.lblEmailLogado.Size = new System.Drawing.Size(35, 13);
+            this.lblEmailLogado.TabIndex = 21;
+            this.lblEmailLogado.Text = "E-mail";
             // 
             // FrmPainelPrincipal
             // 
@@ -395,11 +442,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPainelPrincipal";
             this.pnlMenuVertical.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.pnlMenuVertical.PerformLayout();
             this.pnlTitle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -429,5 +478,9 @@
         private System.Windows.Forms.Button btnEstoqueEstoque;
         private System.Windows.Forms.Button btnEstoqueReserva;
         private System.Windows.Forms.Button btnFinContasReceber;
+        private System.Windows.Forms.PictureBox btnLogout;
+        private System.Windows.Forms.Label lblEmailLogado;
+        private System.Windows.Forms.Label lblCargoLogado;
+        private System.Windows.Forms.Label lblNomeLogado;
     }
 }

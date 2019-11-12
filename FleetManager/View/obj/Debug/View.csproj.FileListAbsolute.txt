@@ -18,3 +18,10 @@ C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.financeir
 C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.FrmProgressLogin.resources
 C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.cadastros.FrmContrato.resources
 C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.cadastros.FrmDespesa.resources
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.cadastros.FrmViagens.resources
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\Control.dll
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\Model.dll
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\Control.pdb
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\Model.pdb
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\Entidade.dll
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\bin\Debug\Entidade.pdb

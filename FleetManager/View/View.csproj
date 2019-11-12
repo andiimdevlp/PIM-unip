@@ -138,6 +138,9 @@
     <EmbeddedResource Include="cadastros\FrmDespesa.resx">
       <DependentUpon>FrmDespesa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cadastros\FrmViagens.resx">
+      <DependentUpon>FrmViagens.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="financeiro\FrmContasPagar.resx">
       <DependentUpon>FrmContasPagar.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +218,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\ProgressLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\importancia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Control\Control.csproj">
+      <Project>{56EEC46D-8FCB-4D08-9405-A65482E8BE46}</Project>
+      <Name>Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidade\Entidade.csproj">
+      <Project>{1d5286ab-d0b0-4216-912a-9a02254f5682}</Project>
+      <Name>Entidade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\guest-user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

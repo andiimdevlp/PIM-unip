@@ -54,6 +54,8 @@
             this.txtUserEmail.Name = "txtUserEmail";
             this.txtUserEmail.Size = new System.Drawing.Size(251, 13);
             this.txtUserEmail.TabIndex = 1;
+            this.txtUserEmail.Text = "Digite Aqui!";
+            this.txtUserEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtUserEmail.TextChanged += new System.EventHandler(this.txtUserEmail_TextChanged);
             this.txtUserEmail.MouseLeave += new System.EventHandler(this.txtUserEmail_MouseLeave);
             // 

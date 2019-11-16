@@ -115,5 +115,11 @@ namespace View
             this.Show();
             //txtUsuarioLogin.Focus();
         }
+
+        private void lnkRecuperarSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var recoverPasswor = new FrmRecoverPassword();
+            recoverPasswor.ShowDialog();
+        }
     }
 }

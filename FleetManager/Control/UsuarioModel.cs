@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model;
-using Entidade.Cache;
 
 namespace Control
 {
@@ -15,16 +14,20 @@ namespace Control
         {
             return userDAO.Login(user, pass);
         }
+        public string recoverPassword(string userRequesting)
+        {
+            return userDAO.recoverPassword(userRequesting);
+        }
         public void CargoMetodo()
         {
-            if (UserLoginCache.NivelAcesso == Cargos.Adiminstrador)
-            {
+            //if (UserLoginCache.NivelAcesso == Cargos.Adiminstrador)
+            //{
 
-            }
-            if (UserLoginCache.NivelAcesso == Cargos.Recepcionista || UserLoginCache.NivelAcesso == Cargos.Contador)
-            {
+            //}
+            //if (UserLoginCache.NivelAcesso == Cargos.Recepcionista || UserLoginCache.NivelAcesso == Cargos.Contador)
+            //{
 
-            }
+            //}
         }
     }
 }

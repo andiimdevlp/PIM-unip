@@ -8,3 +8,13 @@ C:\Users\andiim\source\repos\PIM-unip\FleetManager\Control\obj\Debug\Control.dll
 C:\Users\andiim\source\repos\PIM-unip\FleetManager\Control\obj\Debug\Control.pdb
 C:\Users\andiim\source\repos\PIM-unip\FleetManager\Control\bin\Debug\Entidade.dll
 C:\Users\andiim\source\repos\PIM-unip\FleetManager\Control\bin\Debug\Entidade.pdb
+D:\PIM-unip\FleetManager\Control\obj\Debug\Control.csprojAssemblyReference.cache
+D:\PIM-unip\FleetManager\Control\obj\Debug\Control.dll
+D:\PIM-unip\FleetManager\Control\obj\Debug\Control.pdb
+D:\PIM-unip\FleetManager\Control\bin\Debug\Control.dll
+D:\PIM-unip\FleetManager\Control\bin\Debug\Control.pdb
+D:\PIM-unip\FleetManager\Control\bin\Debug\Entidade.dll
+D:\PIM-unip\FleetManager\Control\bin\Debug\Model.dll
+D:\PIM-unip\FleetManager\Control\bin\Debug\Model.pdb
+D:\PIM-unip\FleetManager\Control\bin\Debug\Entidade.pdb
+D:\PIM-unip\FleetManager\Control\obj\Debug\Control.csproj.CopyComplete

@@ -24,5 +24,23 @@ namespace View
             var result = user.recoverPassword(txtUserEmail.Text);
             lblResposta.Text = result;
         }
+
+        private void txtUserEmail_TextChanged(object sender, EventArgs e)
+        {
+            if (txtUserEmail.Text == "Digite Aqui!")
+            {
+                txtUserEmail.Text = "";
+                txtUserEmail.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtUserEmail_MouseLeave(object sender, EventArgs e)
+        {
+            if (txtUserEmail.Text == "")
+            {
+                txtUserEmail.Text = "Digite Aqui!";
+                txtUserEmail.ForeColor = Color.LightGray;
+            }
+        }
     }
 }

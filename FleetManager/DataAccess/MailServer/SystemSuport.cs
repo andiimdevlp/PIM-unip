@@ -17,10 +17,5 @@ namespace Model.MailServer
             ssl = true;
             inicializeSmtpClient();
         }
-
-        internal void sendMail(string subject, string body)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

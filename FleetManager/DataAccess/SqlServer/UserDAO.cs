@@ -36,9 +36,7 @@ namespace Model
                         return true;
                     }
                     else
-                    {
                         return false;
-                    }
                 }
 
             }
@@ -70,7 +68,9 @@ namespace Model
                             "\nsua senha é: " + userPassword + ".", recipientMail: new List<string> { userMail });
                     }
                     else
+                    {
                         return "Desculpe, Usuario/E-mail não localizado";
+                    }
                 }
             }
         }

@@ -51,3 +51,5 @@ D:\PIM-unip\FleetManager\View\obj\Debug\View.csproj.GenerateResource.cache
 D:\PIM-unip\FleetManager\View\obj\Debug\View.csproj.CopyComplete
 D:\PIM-unip\FleetManager\View\obj\Debug\View.exe
 D:\PIM-unip\FleetManager\View\obj\Debug\View.pdb
+D:\PIM-unip\FleetManager\View\obj\Debug\View.estoque.FrmEstoque.resources
+D:\PIM-unip\FleetManager\View\obj\Debug\View.FrmRecoverPassword.resources

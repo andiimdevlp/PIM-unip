@@ -43,12 +43,12 @@ namespace Model
         }
         public string recoverPassword(string userRequesting)
         {
-            using (var conexao = GetConnection())
+            using (var con = GetConnection())
             {
-                conexao.Open();
+                con.Open();
                 using (var cmd = new SqlCommand())
                 {
-                    cmd.Connection = conexao;
+                    cmd.Connection = con;
                     cmd.CommandText = "select from  usuarios where usuario=@user or email=@email";
                     cmd.Parameters.AddWithValue("@user", userRequesting);
                     cmd.Parameters.AddWithValue("@email", userRequesting);

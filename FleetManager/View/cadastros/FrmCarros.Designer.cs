@@ -50,7 +50,7 @@
             // lblPlaca
             // 
             this.lblPlaca.AutoSize = true;
-            this.lblPlaca.Location = new System.Drawing.Point(22, 30);
+            this.lblPlaca.Location = new System.Drawing.Point(152, 37);
             this.lblPlaca.Name = "lblPlaca";
             this.lblPlaca.Size = new System.Drawing.Size(34, 13);
             this.lblPlaca.TabIndex = 0;
@@ -59,7 +59,7 @@
             // lblModelo
             // 
             this.lblModelo.AutoSize = true;
-            this.lblModelo.Location = new System.Drawing.Point(24, 64);
+            this.lblModelo.Location = new System.Drawing.Point(154, 71);
             this.lblModelo.Name = "lblModelo";
             this.lblModelo.Size = new System.Drawing.Size(42, 13);
             this.lblModelo.TabIndex = 1;
@@ -68,7 +68,7 @@
             // lblAno
             // 
             this.lblAno.AutoSize = true;
-            this.lblAno.Location = new System.Drawing.Point(24, 94);
+            this.lblAno.Location = new System.Drawing.Point(154, 101);
             this.lblAno.Name = "lblAno";
             this.lblAno.Size = new System.Drawing.Size(26, 13);
             this.lblAno.TabIndex = 2;
@@ -77,7 +77,7 @@
             // lblRenavam
             // 
             this.lblRenavam.AutoSize = true;
-            this.lblRenavam.Location = new System.Drawing.Point(371, 64);
+            this.lblRenavam.Location = new System.Drawing.Point(585, 64);
             this.lblRenavam.Name = "lblRenavam";
             this.lblRenavam.Size = new System.Drawing.Size(53, 13);
             this.lblRenavam.TabIndex = 5;
@@ -86,7 +86,7 @@
             // lblCor
             // 
             this.lblCor.AutoSize = true;
-            this.lblCor.Location = new System.Drawing.Point(369, 30);
+            this.lblCor.Location = new System.Drawing.Point(583, 30);
             this.lblCor.Name = "lblCor";
             this.lblCor.Size = new System.Drawing.Size(23, 13);
             this.lblCor.TabIndex = 4;
@@ -95,7 +95,7 @@
             // lblAdicionais
             // 
             this.lblAdicionais.AutoSize = true;
-            this.lblAdicionais.Location = new System.Drawing.Point(371, 94);
+            this.lblAdicionais.Location = new System.Drawing.Point(585, 94);
             this.lblAdicionais.Name = "lblAdicionais";
             this.lblAdicionais.Size = new System.Drawing.Size(55, 13);
             this.lblAdicionais.TabIndex = 6;
@@ -113,7 +113,7 @@
             "Diesel",
             "Flex",
             "Gasolina"});
-            this.cbCombustivel.Location = new System.Drawing.Point(79, 124);
+            this.cbCombustivel.Location = new System.Drawing.Point(209, 131);
             this.cbCombustivel.Name = "cbCombustivel";
             this.cbCombustivel.Size = new System.Drawing.Size(82, 64);
             this.cbCombustivel.TabIndex = 11;
@@ -122,7 +122,7 @@
             // 
             this.cbAlugado.AutoSize = true;
             this.cbAlugado.Enabled = false;
-            this.cbAlugado.Location = new System.Drawing.Point(371, 124);
+            this.cbAlugado.Location = new System.Drawing.Point(585, 124);
             this.cbAlugado.Name = "cbAlugado";
             this.cbAlugado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cbAlugado.Size = new System.Drawing.Size(65, 17);
@@ -132,42 +132,42 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 23);
+            this.textBox1.Location = new System.Drawing.Point(209, 30);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 13;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(79, 57);
+            this.textBox2.Location = new System.Drawing.Point(209, 64);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 14;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(79, 87);
+            this.textBox3.Location = new System.Drawing.Point(209, 94);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 15;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(439, 23);
+            this.textBox4.Location = new System.Drawing.Point(653, 23);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 16;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(439, 57);
+            this.textBox5.Location = new System.Drawing.Point(653, 57);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 17;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(439, 87);
+            this.textBox6.Location = new System.Drawing.Point(653, 87);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
@@ -177,7 +177,7 @@
             // 
             this.btnSalvarCarro.FlatAppearance.BorderSize = 0;
             this.btnSalvarCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvarCarro.Location = new System.Drawing.Point(383, 157);
+            this.btnSalvarCarro.Location = new System.Drawing.Point(597, 157);
             this.btnSalvarCarro.Name = "btnSalvarCarro";
             this.btnSalvarCarro.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarCarro.TabIndex = 19;
@@ -188,7 +188,7 @@
             // 
             this.btnExcluirCarro.FlatAppearance.BorderSize = 0;
             this.btnExcluirCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluirCarro.Location = new System.Drawing.Point(487, 157);
+            this.btnExcluirCarro.Location = new System.Drawing.Point(701, 157);
             this.btnExcluirCarro.Name = "btnExcluirCarro";
             this.btnExcluirCarro.Size = new System.Drawing.Size(75, 23);
             this.btnExcluirCarro.TabIndex = 20;
@@ -206,7 +206,7 @@
             "Passeio",
             "Caminhão",
             "Van"});
-            this.chModeloVeiculo.Location = new System.Drawing.Point(193, 124);
+            this.chModeloVeiculo.Location = new System.Drawing.Point(323, 131);
             this.chModeloVeiculo.Name = "chModeloVeiculo";
             this.chModeloVeiculo.Size = new System.Drawing.Size(95, 48);
             this.chModeloVeiculo.TabIndex = 21;

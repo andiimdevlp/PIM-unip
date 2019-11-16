@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conexao.cs" />
+    <Compile Include="MailServer\MasterServerMail.cs" />
+    <Compile Include="MailServer\SystemSuport.cs" />
+    <Compile Include="SqlServer\Conexao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserDAO.cs" />
+    <Compile Include="SqlServer\UserDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidade\Entidade.csproj">

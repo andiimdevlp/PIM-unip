@@ -137,6 +137,7 @@
             this.lnkRecuperarSenha.TabIndex = 0;
             this.lnkRecuperarSenha.TabStop = true;
             this.lnkRecuperarSenha.Text = "Esqueceu sua Senha?";
+            this.lnkRecuperarSenha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkRecuperarSenha_LinkClicked);
             // 
             // lblErroLogin
             // 

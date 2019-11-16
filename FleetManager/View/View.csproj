@@ -127,6 +127,12 @@
     <Compile Include="FrmProgressLogin.Designer.cs">
       <DependentUpon>FrmProgressLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRecoverPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecoverPassword.Designer.cs">
+      <DependentUpon>FrmRecoverPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="cadastros\FrmCarros.resx">
@@ -141,6 +147,9 @@
     <EmbeddedResource Include="cadastros\FrmViagens.resx">
       <DependentUpon>FrmViagens.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="estoque\FrmEstoque.resx">
+      <DependentUpon>FrmEstoque.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="financeiro\FrmContasPagar.resx">
       <DependentUpon>FrmContasPagar.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProgressLogin.resx">
       <DependentUpon>FrmProgressLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecoverPassword.resx">
+      <DependentUpon>FrmRecoverPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

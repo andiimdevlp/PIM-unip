@@ -58,8 +58,8 @@ namespace Model
                     if (reader.Read() == true)
                     {
                         string userName = reader.GetString(1);
-                        string userMail = reader.GetString(4);
-                        string userPassword = reader.GetString(7); //verificar posição do campo no BD
+                        string userMail = reader.GetString(3);
+                        string userPassword = reader.GetString(6); 
 
                         var mailService = new MailServer.SystemSuport();
                         mailService.sendMail(

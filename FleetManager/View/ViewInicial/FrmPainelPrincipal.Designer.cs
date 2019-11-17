@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.pnlMenuVertical = new System.Windows.Forms.Panel();
+            this.lblEmailLogado = new System.Windows.Forms.Label();
+            this.lblCargoLogado = new System.Windows.Forms.Label();
+            this.lblNomeLogado = new System.Windows.Forms.Label();
             this.btnEstoqueEstoque = new System.Windows.Forms.Button();
             this.btnEstoqueReserva = new System.Windows.Forms.Button();
             this.btnRelFaturamento = new System.Windows.Forms.Button();
@@ -46,27 +49,27 @@
             this.btnFechar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
+            this.avatarHomen = new System.Windows.Forms.PictureBox();
             this.btnLogout = new System.Windows.Forms.PictureBox();
             this.btnRelatorio = new System.Windows.Forms.Button();
             this.btnEstoque = new System.Windows.Forms.Button();
             this.btnFinanceiro = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
-            this.picLogo = new System.Windows.Forms.PictureBox();
-            this.lblNomeLogado = new System.Windows.Forms.Label();
-            this.lblCargoLogado = new System.Windows.Forms.Label();
-            this.lblEmailLogado = new System.Windows.Forms.Label();
+            this.avatarMulher = new System.Windows.Forms.PictureBox();
             this.pnlMenuVertical.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarHomen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarMulher)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenuVertical
             // 
             this.pnlMenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
+            this.pnlMenuVertical.Controls.Add(this.avatarHomen);
             this.pnlMenuVertical.Controls.Add(this.lblEmailLogado);
             this.pnlMenuVertical.Controls.Add(this.lblCargoLogado);
             this.pnlMenuVertical.Controls.Add(this.lblNomeLogado);
@@ -87,12 +90,39 @@
             this.pnlMenuVertical.Controls.Add(this.btnEstoque);
             this.pnlMenuVertical.Controls.Add(this.btnFinanceiro);
             this.pnlMenuVertical.Controls.Add(this.btnCadastro);
-            this.pnlMenuVertical.Controls.Add(this.picLogo);
+            this.pnlMenuVertical.Controls.Add(this.avatarMulher);
             this.pnlMenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenuVertical.Location = new System.Drawing.Point(0, 0);
             this.pnlMenuVertical.Name = "pnlMenuVertical";
             this.pnlMenuVertical.Size = new System.Drawing.Size(200, 721);
             this.pnlMenuVertical.TabIndex = 0;
+            // 
+            // lblEmailLogado
+            // 
+            this.lblEmailLogado.AutoSize = true;
+            this.lblEmailLogado.Location = new System.Drawing.Point(92, 71);
+            this.lblEmailLogado.Name = "lblEmailLogado";
+            this.lblEmailLogado.Size = new System.Drawing.Size(35, 13);
+            this.lblEmailLogado.TabIndex = 21;
+            this.lblEmailLogado.Text = "E-mail";
+            // 
+            // lblCargoLogado
+            // 
+            this.lblCargoLogado.AutoSize = true;
+            this.lblCargoLogado.Location = new System.Drawing.Point(92, 49);
+            this.lblCargoLogado.Name = "lblCargoLogado";
+            this.lblCargoLogado.Size = new System.Drawing.Size(35, 13);
+            this.lblCargoLogado.TabIndex = 20;
+            this.lblCargoLogado.Text = "Cargo";
+            // 
+            // lblNomeLogado
+            // 
+            this.lblNomeLogado.AutoSize = true;
+            this.lblNomeLogado.Location = new System.Drawing.Point(92, 24);
+            this.lblNomeLogado.Name = "lblNomeLogado";
+            this.lblNomeLogado.Size = new System.Drawing.Size(35, 13);
+            this.lblNomeLogado.TabIndex = 19;
+            this.lblNomeLogado.Text = "Nome";
             // 
             // btnEstoqueEstoque
             // 
@@ -311,6 +341,17 @@
             this.btnMenu.TabStop = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
+            // avatarHomen
+            // 
+            this.avatarHomen.Enabled = false;
+            this.avatarHomen.Image = global::View.Properties.Resources.guest_user;
+            this.avatarHomen.Location = new System.Drawing.Point(4, 3);
+            this.avatarHomen.Name = "avatarHomen";
+            this.avatarHomen.Size = new System.Drawing.Size(78, 81);
+            this.avatarHomen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatarHomen.TabIndex = 22;
+            this.avatarHomen.TabStop = false;
+            // 
             // btnLogout
             // 
             this.btnLogout.Image = global::View.Properties.Resources.Logout;
@@ -390,43 +431,16 @@
             this.btnCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCadastro.UseVisualStyleBackColor = false;
             // 
-            // picLogo
+            // avatarMulher
             // 
-            this.picLogo.Enabled = false;
-            this.picLogo.Image = global::View.Properties.Resources.guest_user;
-            this.picLogo.Location = new System.Drawing.Point(4, 3);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(78, 81);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 0;
-            this.picLogo.TabStop = false;
-            // 
-            // lblNomeLogado
-            // 
-            this.lblNomeLogado.AutoSize = true;
-            this.lblNomeLogado.Location = new System.Drawing.Point(92, 49);
-            this.lblNomeLogado.Name = "lblNomeLogado";
-            this.lblNomeLogado.Size = new System.Drawing.Size(35, 13);
-            this.lblNomeLogado.TabIndex = 19;
-            this.lblNomeLogado.Text = "Nome";
-            // 
-            // lblCargoLogado
-            // 
-            this.lblCargoLogado.AutoSize = true;
-            this.lblCargoLogado.Location = new System.Drawing.Point(92, 24);
-            this.lblCargoLogado.Name = "lblCargoLogado";
-            this.lblCargoLogado.Size = new System.Drawing.Size(35, 13);
-            this.lblCargoLogado.TabIndex = 20;
-            this.lblCargoLogado.Text = "Cargo";
-            // 
-            // lblEmailLogado
-            // 
-            this.lblEmailLogado.AutoSize = true;
-            this.lblEmailLogado.Location = new System.Drawing.Point(92, 71);
-            this.lblEmailLogado.Name = "lblEmailLogado";
-            this.lblEmailLogado.Size = new System.Drawing.Size(35, 13);
-            this.lblEmailLogado.TabIndex = 21;
-            this.lblEmailLogado.Text = "E-mail";
+            this.avatarMulher.Enabled = false;
+            this.avatarMulher.Image = global::View.Properties.Resources.guest_user_fem;
+            this.avatarMulher.Location = new System.Drawing.Point(4, 3);
+            this.avatarMulher.Name = "avatarMulher";
+            this.avatarMulher.Size = new System.Drawing.Size(78, 81);
+            this.avatarMulher.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatarMulher.TabIndex = 0;
+            this.avatarMulher.TabStop = false;
             // 
             // FrmPainelPrincipal
             // 
@@ -447,8 +461,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarHomen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarMulher)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -459,7 +474,7 @@
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.PictureBox btnMenu;
         private System.Windows.Forms.Panel pnlView;
-        private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.PictureBox avatarMulher;
         private System.Windows.Forms.PictureBox btnFechar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Button btnEstoque;
@@ -482,5 +497,6 @@
         private System.Windows.Forms.Label lblEmailLogado;
         private System.Windows.Forms.Label lblCargoLogado;
         private System.Windows.Forms.Label lblNomeLogado;
+        private System.Windows.Forms.PictureBox avatarHomen;
     }
 }

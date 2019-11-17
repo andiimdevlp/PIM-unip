@@ -32,7 +32,7 @@
             this.btnEnviar = new System.Windows.Forms.Button();
             this.lblResposta = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.reUsuarioLogin = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.reRecovery = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.txtUserEmail = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -84,16 +84,16 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // reUsuarioLogin
+            // reRecovery
             // 
-            this.reUsuarioLogin.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.reUsuarioLogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(135)))), ((int)(((byte)(195)))));
-            this.reUsuarioLogin.CornerRadius = 9;
-            this.reUsuarioLogin.Enabled = false;
-            this.reUsuarioLogin.Location = new System.Drawing.Point(130, 55);
-            this.reUsuarioLogin.Name = "reUsuarioLogin";
-            this.reUsuarioLogin.SelectionColor = System.Drawing.Color.WhiteSmoke;
-            this.reUsuarioLogin.Size = new System.Drawing.Size(278, 25);
+            this.reRecovery.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.reRecovery.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(135)))), ((int)(((byte)(195)))));
+            this.reRecovery.CornerRadius = 9;
+            this.reRecovery.Enabled = false;
+            this.reRecovery.Location = new System.Drawing.Point(130, 55);
+            this.reRecovery.Name = "reRecovery";
+            this.reRecovery.SelectionColor = System.Drawing.Color.WhiteSmoke;
+            this.reRecovery.Size = new System.Drawing.Size(278, 25);
             // 
             // shapeContainer1
             // 
@@ -101,7 +101,7 @@
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.reUsuarioLogin});
+            this.reRecovery});
             this.shapeContainer1.Size = new System.Drawing.Size(500, 200);
             this.shapeContainer1.TabIndex = 5;
             this.shapeContainer1.TabStop = false;
@@ -149,7 +149,7 @@
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Label lblResposta;
         private System.Windows.Forms.Button btnCancelar;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape reUsuarioLogin;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape reRecovery;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private System.Windows.Forms.TextBox txtUserEmail;
     }

@@ -33,16 +33,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.txtValorDespesa = new System.Windows.Forms.TextBox();
-            this.cbTipoDespesa = new System.Windows.Forms.CheckedListBox();
             this.txtPlacaDespesa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnGravarDespesa = new System.Windows.Forms.Button();
+            this.txtNatureza = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 66);
+            this.label1.Location = new System.Drawing.Point(171, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 0;
@@ -50,17 +51,19 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 107);
+            this.label2.Location = new System.Drawing.Point(171, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Tipo";
+            this.label2.Text = "Natureza";
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(346, 66);
+            this.label3.Location = new System.Drawing.Point(457, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 2;
@@ -68,7 +71,8 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(419, 59);
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Location = new System.Drawing.Point(530, 68);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(244, 79);
             this.richTextBox1.TabIndex = 3;
@@ -76,40 +80,26 @@
             // 
             // txtValorDespesa
             // 
-            this.txtValorDespesa.Location = new System.Drawing.Point(128, 59);
+            this.txtValorDespesa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtValorDespesa.Location = new System.Drawing.Point(239, 68);
             this.txtValorDespesa.MaxLength = 20;
             this.txtValorDespesa.Name = "txtValorDespesa";
             this.txtValorDespesa.Size = new System.Drawing.Size(100, 20);
             this.txtValorDespesa.TabIndex = 4;
             // 
-            // cbTipoDespesa
-            // 
-            this.cbTipoDespesa.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.cbTipoDespesa.FormattingEnabled = true;
-            this.cbTipoDespesa.Items.AddRange(new object[] {
-            "Multa",
-            "Garagem",
-            "Pedagios",
-            "Abastecimento",
-            "Manutenção",
-            "Impostos",
-            "Outros"});
-            this.cbTipoDespesa.Location = new System.Drawing.Point(128, 107);
-            this.cbTipoDespesa.Name = "cbTipoDespesa";
-            this.cbTipoDespesa.Size = new System.Drawing.Size(102, 105);
-            this.cbTipoDespesa.TabIndex = 5;
-            // 
             // txtPlacaDespesa
             // 
-            this.txtPlacaDespesa.Location = new System.Drawing.Point(419, 166);
+            this.txtPlacaDespesa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPlacaDespesa.Location = new System.Drawing.Point(530, 175);
             this.txtPlacaDespesa.Name = "txtPlacaDespesa";
             this.txtPlacaDespesa.Size = new System.Drawing.Size(100, 20);
             this.txtPlacaDespesa.TabIndex = 6;
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(346, 173);
+            this.label4.Location = new System.Drawing.Point(457, 182);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 7;
@@ -117,24 +107,34 @@
             // 
             // btnGravarDespesa
             // 
+            this.btnGravarDespesa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGravarDespesa.FlatAppearance.BorderSize = 0;
             this.btnGravarDespesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGravarDespesa.Location = new System.Drawing.Point(588, 216);
+            this.btnGravarDespesa.Location = new System.Drawing.Point(699, 225);
             this.btnGravarDespesa.Name = "btnGravarDespesa";
             this.btnGravarDespesa.Size = new System.Drawing.Size(75, 23);
             this.btnGravarDespesa.TabIndex = 8;
             this.btnGravarDespesa.Text = "Gravar";
             this.btnGravarDespesa.UseVisualStyleBackColor = true;
             // 
+            // txtNatureza
+            // 
+            this.txtNatureza.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNatureza.Location = new System.Drawing.Point(239, 109);
+            this.txtNatureza.MaxLength = 20;
+            this.txtNatureza.Name = "txtNatureza";
+            this.txtNatureza.Size = new System.Drawing.Size(100, 20);
+            this.txtNatureza.TabIndex = 9;
+            // 
             // FrmDespesa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 672);
+            this.Controls.Add(this.txtNatureza);
             this.Controls.Add(this.btnGravarDespesa);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtPlacaDespesa);
-            this.Controls.Add(this.cbTipoDespesa);
             this.Controls.Add(this.txtValorDespesa);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label3);
@@ -157,9 +157,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox txtValorDespesa;
-        private System.Windows.Forms.CheckedListBox cbTipoDespesa;
         private System.Windows.Forms.TextBox txtPlacaDespesa;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnGravarDespesa;
+        private System.Windows.Forms.TextBox txtNatureza;
     }
 }

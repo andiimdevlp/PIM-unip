@@ -85,12 +85,6 @@
     <Compile Include="financeiro\FrmContasPagar.Designer.cs">
       <DependentUpon>FrmContasPagar.cs</DependentUpon>
     </Compile>
-    <Compile Include="financeiro\FrmContasReceber.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="financeiro\FrmContasReceber.Designer.cs">
-      <DependentUpon>FrmContasReceber.cs</DependentUpon>
-    </Compile>
     <Compile Include="financeiro\FrmSinistro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,8 +132,8 @@
     <EmbeddedResource Include="financeiro\FrmContasPagar.resx">
       <DependentUpon>FrmContasPagar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="financeiro\FrmContasReceber.resx">
-      <DependentUpon>FrmContasReceber.cs</DependentUpon>
+    <EmbeddedResource Include="financeiro\FrmSinistro.resx">
+      <DependentUpon>FrmSinistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewInicial\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

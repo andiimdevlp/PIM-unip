@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNatureza = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblNatureza
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblNatureza.AutoSize = true;
+            this.lblNatureza.Location = new System.Drawing.Point(192, 65);
+            this.lblNatureza.Name = "lblNatureza";
+            this.lblNatureza.Size = new System.Drawing.Size(50, 13);
+            this.lblNatureza.TabIndex = 0;
+            this.lblNatureza.Text = "Natureza";
             // 
             // FrmViagens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 672);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNatureza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmViagens";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -57,6 +57,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNatureza;
     }
 }

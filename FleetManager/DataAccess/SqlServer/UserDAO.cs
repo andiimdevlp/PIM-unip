@@ -29,9 +29,9 @@ namespace Model
                     {
                         //while (reader.Read())
                         //{
-                        //    UserLoginCache.IdUsuario = reader.GetString(0);
-                        //    UserLoginCache.EmailUsuario = reader.GetString(4);
-                        //    UserLoginCache.NivelAcesso = reader.GetString(5);
+                        //    UserLoginCache.NomeUsuario = reader.GetString(1);
+                        //    UserLoginCache.EmailUsuario = reader.GetString(3);
+                        //    UserLoginCache.NivelAcesso = reader.GetString(4);
                         //}
                         return true;
                     }
@@ -49,7 +49,7 @@ namespace Model
                 using (var cmd = new SqlCommand())
                 {
                     cmd.Connection = con;
-                    cmd.CommandText = "select from  usuarios where usuario=@user or email=@email";
+                    cmd.CommandText = "select * from  usuarios where usuario=@user or email=@email";
                     cmd.Parameters.AddWithValue("@user", userRequesting);
                     cmd.Parameters.AddWithValue("@email", userRequesting);
                     cmd.CommandType = CommandType.Text;
@@ -58,14 +58,17 @@ namespace Model
                     if (reader.Read() == true)
                     {
                         string userName = reader.GetString(1);
-                        string userMail = reader.GetString(4);
-                        string userPassword = reader.GetString(7); //verificar posição do campo no BD
+                        string userMail = reader.GetString(3);
+                        string userPassword = reader.GetString(5); 
 
                         var mailService = new MailServer.SystemSuport();
                         mailService.sendMail(
                             subject: "Recuperação de senha!",
                             body: "Olá, " + userName + "\n Recebemos sua solicitação de recuperação de senha" +
                             "\nsua senha é: " + userPassword + ".", recipientMail: new List<string> { userMail });
+
+                        return "Olá, " + userName + "\nVocê solicitou lembrar sua senha.\n" +
+                            "Por favor, verifique seu e-mail: " + userMail + "\npara onde a senha foi enviada!";
                     }
                     else
                     {

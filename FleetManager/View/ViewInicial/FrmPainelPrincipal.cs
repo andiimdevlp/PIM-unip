@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidade.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,7 +62,22 @@ namespace View
             if(MessageBox.Show("Deseja realmente fazer logoff no sistema?", "Logoff",MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             this.Close();
         }
+        private void FrmPainelPrincipal_Load (object sender, EventArgs e)
+        {
+            LoadUserData();
+        }
+        private void LoadUserData()
+        {
+            lblNomeLogado.Text = UserLoginCache.NomeUsuario;
+            lblCargoLogado.Text = UserLoginCache.NivelAcesso;
+            lblEmailLogado.Text = UserLoginCache.EmailUsuario;
 
+            if(UserLoginCache.SexoUsuario == "M")
+            {
+                avatarMulher.Visible = true;
+                avatarHomen.Visible = false;
+            }
+        }
 
         //=====================================================================
         //ABERTURA DOS SUB-MENUS COM REDIMENSIONAMENTO DA LOCATION

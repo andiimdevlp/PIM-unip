@@ -232,6 +232,8 @@
   <ItemGroup>
     <None Include="img\guest-user.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="img\guest-user-fem.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

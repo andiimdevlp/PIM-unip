@@ -54,3 +54,5 @@ D:\PIM-unip\FleetManager\View\obj\Debug\View.pdb
 D:\PIM-unip\FleetManager\View\obj\Debug\View.estoque.FrmEstoque.resources
 D:\PIM-unip\FleetManager\View\obj\Debug\View.FrmRecoverPassword.resources
 D:\PIM-unip\FleetManager\View\obj\Debug\View.financeiro.FrmContasReceber.resources
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.FrmRecoverPassword.resources
+C:\Users\andiim\source\repos\PIM-unip\FleetManager\View\obj\Debug\View.financeiro.FrmSinistro.resources

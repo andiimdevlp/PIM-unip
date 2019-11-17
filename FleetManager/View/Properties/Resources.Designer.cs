@@ -133,6 +133,16 @@ namespace View.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap guest_user_fem {
+            get {
+                object obj = ResourceManager.GetObject("guest-user-fem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_access {
             get {
                 object obj = ResourceManager.GetObject("icon-access", resourceCulture);

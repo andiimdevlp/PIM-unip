@@ -69,7 +69,7 @@
             this.reUsuarioLogin.Location = new System.Drawing.Point(113, 390);
             this.reUsuarioLogin.Name = "reUsuarioLogin";
             this.reUsuarioLogin.SelectionColor = System.Drawing.Color.WhiteSmoke;
-            this.reUsuarioLogin.Size = new System.Drawing.Size(239, 32);
+            this.reUsuarioLogin.Size = new System.Drawing.Size(238, 32);
             // 
             // retSenhaLogin
             // 

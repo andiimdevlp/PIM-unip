@@ -12,5 +12,6 @@ namespace Entidade.Cache
         public static string NomeUsuario { get; set; }
         public static string NivelAcesso { get; set; }
         public static string EmailUsuario { get; set; }
+        public static string SexoUsuario { get; set; }
     }
 }

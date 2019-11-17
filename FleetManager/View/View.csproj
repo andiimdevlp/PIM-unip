@@ -79,18 +79,6 @@
     <Compile Include="cadastros\FrmViagens.Designer.cs">
       <DependentUpon>FrmViagens.cs</DependentUpon>
     </Compile>
-    <Compile Include="estoque\FrmEstoque.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="estoque\FrmEstoque.Designer.cs">
-      <DependentUpon>FrmEstoque.cs</DependentUpon>
-    </Compile>
-    <Compile Include="estoque\FrmReserva.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="estoque\FrmReserva.Designer.cs">
-      <DependentUpon>FrmReserva.cs</DependentUpon>
-    </Compile>
     <Compile Include="financeiro\FrmContasPagar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,28 +97,28 @@
     <Compile Include="financeiro\FrmSinistro.Designer.cs">
       <DependentUpon>FrmSinistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="ViewInicial\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
+    <Compile Include="ViewInicial\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPainelPrincipal.cs">
+    <Compile Include="ViewInicial\FrmPainelPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPainelPrincipal.Designer.cs">
+    <Compile Include="ViewInicial\FrmPainelPrincipal.Designer.cs">
       <DependentUpon>FrmPainelPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmProgressLogin.cs">
+    <Compile Include="ViewInicial\FrmProgressLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmProgressLogin.Designer.cs">
+    <Compile Include="ViewInicial\FrmProgressLogin.Designer.cs">
       <DependentUpon>FrmProgressLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRecoverPassword.cs">
+    <Compile Include="ViewInicial\FrmRecoverPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRecoverPassword.Designer.cs">
+    <Compile Include="ViewInicial\FrmRecoverPassword.Designer.cs">
       <DependentUpon>FrmRecoverPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -147,22 +135,22 @@
     <EmbeddedResource Include="cadastros\FrmViagens.resx">
       <DependentUpon>FrmViagens.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="estoque\FrmEstoque.resx">
-      <DependentUpon>FrmEstoque.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="financeiro\FrmContasPagar.resx">
       <DependentUpon>FrmContasPagar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLogin.resx">
+    <EmbeddedResource Include="financeiro\FrmContasReceber.resx">
+      <DependentUpon>FrmContasReceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewInicial\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPainelPrincipal.resx">
+    <EmbeddedResource Include="ViewInicial\FrmPainelPrincipal.resx">
       <DependentUpon>FrmPainelPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmProgressLogin.resx">
+    <EmbeddedResource Include="ViewInicial\FrmProgressLogin.resx">
       <DependentUpon>FrmProgressLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRecoverPassword.resx">
+    <EmbeddedResource Include="ViewInicial\FrmRecoverPassword.resx">
       <DependentUpon>FrmRecoverPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -250,5 +238,6 @@
   <ItemGroup>
     <None Include="img\guest-user.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

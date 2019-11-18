@@ -18,16 +18,5 @@ namespace Control
         {
             return userDAO.recoverPassword(userRequesting);
         }
-        public void CargoMetodo()
-        {
-            //if (UserLoginCache.NivelAcesso == Cargos.Adiminstrador)
-            //{
-
-            //}
-            //if (UserLoginCache.NivelAcesso == Cargos.Recepcionista || UserLoginCache.NivelAcesso == Cargos.Contador)
-            //{
-
-            //}
-        }
     }
 }

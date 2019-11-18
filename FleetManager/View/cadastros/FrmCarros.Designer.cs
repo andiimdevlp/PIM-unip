@@ -45,6 +45,8 @@
             this.btnSalvarCarro = new System.Windows.Forms.Button();
             this.btnExcluirCarro = new System.Windows.Forms.Button();
             this.chModeloVeiculo = new System.Windows.Forms.CheckedListBox();
+            this.dbCarros = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dbCarros)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPlaca
@@ -211,11 +213,20 @@
             this.chModeloVeiculo.Size = new System.Drawing.Size(95, 48);
             this.chModeloVeiculo.TabIndex = 21;
             // 
+            // dbCarros
+            // 
+            this.dbCarros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dbCarros.Location = new System.Drawing.Point(65, 246);
+            this.dbCarros.Name = "dbCarros";
+            this.dbCarros.Size = new System.Drawing.Size(957, 382);
+            this.dbCarros.TabIndex = 22;
+            // 
             // FrmCarros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 672);
+            this.Controls.Add(this.dbCarros);
             this.Controls.Add(this.chModeloVeiculo);
             this.Controls.Add(this.btnExcluirCarro);
             this.Controls.Add(this.btnSalvarCarro);
@@ -238,6 +249,7 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCarros";
+            ((System.ComponentModel.ISupportInitialize)(this.dbCarros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,5 +274,6 @@
         private System.Windows.Forms.Button btnSalvarCarro;
         private System.Windows.Forms.Button btnExcluirCarro;
         private System.Windows.Forms.CheckedListBox chModeloVeiculo;
+        private System.Windows.Forms.DataGridView dbCarros;
     }
 }

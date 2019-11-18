@@ -40,6 +40,9 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.btnBaixar = new System.Windows.Forms.Button();
             this.btnVoltarBaixa = new System.Windows.Forms.Button();
+            this.dbContasPagas = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dbContasPagas)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNatureza
@@ -95,6 +98,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(264, 66);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
@@ -135,6 +139,7 @@
             // btnBaixar
             // 
             this.btnBaixar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBaixar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBaixar.Location = new System.Drawing.Point(651, 200);
             this.btnBaixar.Name = "btnBaixar";
             this.btnBaixar.Size = new System.Drawing.Size(60, 20);
@@ -145,6 +150,7 @@
             // btnVoltarBaixa
             // 
             this.btnVoltarBaixa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVoltarBaixa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltarBaixa.Location = new System.Drawing.Point(746, 200);
             this.btnVoltarBaixa.Name = "btnVoltarBaixa";
             this.btnVoltarBaixa.Size = new System.Drawing.Size(71, 20);
@@ -152,11 +158,36 @@
             this.btnVoltarBaixa.Text = "Voltar Baixa";
             this.btnVoltarBaixa.UseVisualStyleBackColor = true;
             // 
+            // dbContasPagas
+            // 
+            this.dbContasPagas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbContasPagas.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dbContasPagas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dbContasPagas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dbContasPagas.Location = new System.Drawing.Point(57, 301);
+            this.dbContasPagas.Name = "dbContasPagas";
+            this.dbContasPagas.Size = new System.Drawing.Size(951, 324);
+            this.dbContasPagas.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Black", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(392, 265);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(224, 27);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Registros de Contas";
+            // 
             // FrmContasPagar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1084, 672);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dbContasPagas);
             this.Controls.Add(this.btnVoltarBaixa);
             this.Controls.Add(this.btnBaixar);
             this.Controls.Add(this.textBox5);
@@ -171,7 +202,9 @@
             this.Controls.Add(this.lblNatureza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmContasPagar";
+            this.Opacity = 0.9D;
             this.Text = "FrmContasPagar";
+            ((System.ComponentModel.ISupportInitialize)(this.dbContasPagas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,5 +224,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button btnBaixar;
         private System.Windows.Forms.Button btnVoltarBaixa;
+        private System.Windows.Forms.DataGridView dbContasPagas;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -121,9 +121,5 @@ namespace View
         {
             AbrirFromulario<FrmDespesa>();
         }
-
-        
-
-        
     }
 }

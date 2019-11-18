@@ -64,11 +64,11 @@ namespace Model
                         var mailService = new MailServer.SystemSuport();
                         mailService.sendMail(
                             subject: "Recuperação de senha!",
-                            body: "Olá, " + userName + "\n Recebemos sua solicitação de recuperação de senha" +
-                            "\nsua senha é: " + userPassword + ".", recipientMail: new List<string> { userMail });
+                            body: "Olá, \n" + userName + "\n\nRecebemos sua solicitação de recuperação de senha!" +
+                            "\nUse a senha: \b" + userPassword + " para realizar cadastrar uma nova senha.", recipientMail: new List<string> { userMail });
 
-                        return "Olá, " + userName + "\nVocê solicitou lembrar sua senha.\n" +
-                            "Por favor, verifique seu e-mail: " + userMail + "\npara onde a senha foi enviada!";
+                        return "Olá, " + userName + "\nAltere sua senha para ter acesso.\n" +
+                            "Por favor, verifique seu e-mail: " + userMail + "\npara onde a senha provisoria foi enviada!";
                     }
                     else
                     {

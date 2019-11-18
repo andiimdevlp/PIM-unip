@@ -37,6 +37,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnGravarDespesa = new System.Windows.Forms.Button();
             this.txtNatureza = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnExcluirDespesa = new System.Windows.Forms.Button();
+            this.btnEditarDespesa = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -109,7 +113,6 @@
             // 
             this.btnGravarDespesa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGravarDespesa.FlatAppearance.BorderSize = 0;
-            this.btnGravarDespesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGravarDespesa.Location = new System.Drawing.Point(699, 225);
             this.btnGravarDespesa.Name = "btnGravarDespesa";
             this.btnGravarDespesa.Size = new System.Drawing.Size(75, 23);
@@ -126,11 +129,49 @@
             this.txtNatureza.Size = new System.Drawing.Size(100, 20);
             this.txtNatureza.TabIndex = 9;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(56, 268);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(955, 354);
+            this.dataGridView1.TabIndex = 10;
+            // 
+            // btnExcluirDespesa
+            // 
+            this.btnExcluirDespesa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcluirDespesa.FlatAppearance.BorderSize = 0;
+            this.btnExcluirDespesa.Location = new System.Drawing.Point(780, 225);
+            this.btnExcluirDespesa.Name = "btnExcluirDespesa";
+            this.btnExcluirDespesa.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluirDespesa.TabIndex = 11;
+            this.btnExcluirDespesa.Text = "Excluir";
+            this.btnExcluirDespesa.UseVisualStyleBackColor = true;
+            // 
+            // btnEditarDespesa
+            // 
+            this.btnEditarDespesa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditarDespesa.FlatAppearance.BorderSize = 0;
+            this.btnEditarDespesa.Location = new System.Drawing.Point(618, 225);
+            this.btnEditarDespesa.Name = "btnEditarDespesa";
+            this.btnEditarDespesa.Size = new System.Drawing.Size(75, 23);
+            this.btnEditarDespesa.TabIndex = 12;
+            this.btnEditarDespesa.Text = "Editar";
+            this.btnEditarDespesa.UseVisualStyleBackColor = true;
+            // 
             // FrmDespesa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1084, 672);
+            this.Controls.Add(this.btnEditarDespesa);
+            this.Controls.Add(this.btnExcluirDespesa);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtNatureza);
             this.Controls.Add(this.btnGravarDespesa);
             this.Controls.Add(this.label4);
@@ -145,6 +186,7 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDespesa";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,5 +203,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnGravarDespesa;
         private System.Windows.Forms.TextBox txtNatureza;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnExcluirDespesa;
+        private System.Windows.Forms.Button btnEditarDespesa;
     }
 }

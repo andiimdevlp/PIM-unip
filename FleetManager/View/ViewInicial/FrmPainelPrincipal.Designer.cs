@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.pnlMenuVertical = new System.Windows.Forms.Panel();
+            this.avatarHomen = new System.Windows.Forms.PictureBox();
             this.lblEmailLogado = new System.Windows.Forms.Label();
             this.lblCargoLogado = new System.Windows.Forms.Label();
             this.lblNomeLogado = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.PictureBox();
             this.btnEstoqueEstoque = new System.Windows.Forms.Button();
             this.btnEstoqueReserva = new System.Windows.Forms.Button();
             this.btnRelFaturamento = new System.Windows.Forms.Button();
@@ -44,26 +46,24 @@
             this.btnCadastroDespesa = new System.Windows.Forms.Button();
             this.btnCadastroContrato = new System.Windows.Forms.Button();
             this.btnCadastroCarro = new System.Windows.Forms.Button();
-            this.pnlTitle = new System.Windows.Forms.Panel();
-            this.pnlView = new System.Windows.Forms.Panel();
-            this.btnFechar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnMenu = new System.Windows.Forms.PictureBox();
-            this.avatarHomen = new System.Windows.Forms.PictureBox();
-            this.btnLogout = new System.Windows.Forms.PictureBox();
             this.btnRelatorio = new System.Windows.Forms.Button();
             this.btnEstoque = new System.Windows.Forms.Button();
             this.btnFinanceiro = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.avatarMulher = new System.Windows.Forms.PictureBox();
+            this.pnlTitle = new System.Windows.Forms.Panel();
+            this.btnFechar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnMenu = new System.Windows.Forms.PictureBox();
+            this.pnlView = new System.Windows.Forms.Panel();
             this.pnlMenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarHomen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarMulher)).BeginInit();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avatarHomen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avatarMulher)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenuVertical
@@ -97,6 +97,17 @@
             this.pnlMenuVertical.Size = new System.Drawing.Size(200, 721);
             this.pnlMenuVertical.TabIndex = 0;
             // 
+            // avatarHomen
+            // 
+            this.avatarHomen.Enabled = false;
+            this.avatarHomen.Image = global::View.Properties.Resources.guest_user;
+            this.avatarHomen.Location = new System.Drawing.Point(4, 3);
+            this.avatarHomen.Name = "avatarHomen";
+            this.avatarHomen.Size = new System.Drawing.Size(78, 81);
+            this.avatarHomen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatarHomen.TabIndex = 22;
+            this.avatarHomen.TabStop = false;
+            // 
             // lblEmailLogado
             // 
             this.lblEmailLogado.AutoSize = true;
@@ -124,8 +135,21 @@
             this.lblNomeLogado.TabIndex = 19;
             this.lblNomeLogado.Text = "Nome";
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.Image = global::View.Properties.Resources.Logout;
+            this.btnLogout.Location = new System.Drawing.Point(12, 679);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(30, 30);
+            this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnLogout.TabIndex = 18;
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // btnEstoqueEstoque
             // 
+            this.btnEstoqueEstoque.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEstoqueEstoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstoqueEstoque.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstoqueEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -139,6 +163,7 @@
             // 
             // btnEstoqueReserva
             // 
+            this.btnEstoqueReserva.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEstoqueReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstoqueReserva.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstoqueReserva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -152,6 +177,7 @@
             // 
             // btnRelFaturamento
             // 
+            this.btnRelFaturamento.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRelFaturamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRelFaturamento.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRelFaturamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -165,6 +191,7 @@
             // 
             // btnRelGastoFrota
             // 
+            this.btnRelGastoFrota.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRelGastoFrota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRelGastoFrota.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRelGastoFrota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -178,6 +205,7 @@
             // 
             // btnRelFinanceiro
             // 
+            this.btnRelFinanceiro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRelFinanceiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRelFinanceiro.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRelFinanceiro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -191,6 +219,7 @@
             // 
             // btnFinSinistros
             // 
+            this.btnFinSinistros.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinSinistros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinSinistros.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinSinistros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -204,6 +233,7 @@
             // 
             // btnFinContasReceber
             // 
+            this.btnFinContasReceber.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinContasReceber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinContasReceber.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinContasReceber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -217,6 +247,7 @@
             // 
             // btnFinContasPagar
             // 
+            this.btnFinContasPagar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinContasPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinContasPagar.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinContasPagar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -231,6 +262,7 @@
             // 
             // btnCadastroViagem
             // 
+            this.btnCadastroViagem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastroViagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastroViagem.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastroViagem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -244,6 +276,7 @@
             // 
             // btnCadastroDespesa
             // 
+            this.btnCadastroDespesa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastroDespesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastroDespesa.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastroDespesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -258,6 +291,7 @@
             // 
             // btnCadastroContrato
             // 
+            this.btnCadastroContrato.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastroContrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastroContrato.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastroContrato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -272,6 +306,7 @@
             // 
             // btnCadastroCarro
             // 
+            this.btnCadastroCarro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastroCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastroCarro.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastroCarro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
@@ -284,88 +319,10 @@
             this.btnCadastroCarro.UseVisualStyleBackColor = true;
             this.btnCadastroCarro.Click += new System.EventHandler(this.btnCadastroCarro_Click);
             // 
-            // pnlTitle
-            // 
-            this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
-            this.pnlTitle.Controls.Add(this.btnFechar);
-            this.pnlTitle.Controls.Add(this.btnMinimizar);
-            this.pnlTitle.Controls.Add(this.btnMenu);
-            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitle.Location = new System.Drawing.Point(200, 0);
-            this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(1084, 49);
-            this.pnlTitle.TabIndex = 1;
-            this.pnlTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            // 
-            // pnlView
-            // 
-            this.pnlView.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pnlView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlView.Location = new System.Drawing.Point(200, 49);
-            this.pnlView.Name = "pnlView";
-            this.pnlView.Size = new System.Drawing.Size(1084, 672);
-            this.pnlView.TabIndex = 2;
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFechar.Image = global::View.Properties.Resources.fechar;
-            this.btnFechar.Location = new System.Drawing.Point(1050, 12);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(25, 25);
-            this.btnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnFechar.TabIndex = 2;
-            this.btnFechar.TabStop = false;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click_1);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.Image = global::View.Properties.Resources.minimize;
-            this.btnMinimizar.Location = new System.Drawing.Point(1015, 12);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnMinimizar.TabIndex = 1;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click_1);
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.Image = global::View.Properties.Resources.Menu;
-            this.btnMenu.Location = new System.Drawing.Point(6, 7);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(30, 30);
-            this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnMenu.TabIndex = 0;
-            this.btnMenu.TabStop = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
-            // avatarHomen
-            // 
-            this.avatarHomen.Enabled = false;
-            this.avatarHomen.Image = global::View.Properties.Resources.guest_user;
-            this.avatarHomen.Location = new System.Drawing.Point(4, 3);
-            this.avatarHomen.Name = "avatarHomen";
-            this.avatarHomen.Size = new System.Drawing.Size(78, 81);
-            this.avatarHomen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.avatarHomen.TabIndex = 22;
-            this.avatarHomen.TabStop = false;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.Image = global::View.Properties.Resources.Logout;
-            this.btnLogout.Location = new System.Drawing.Point(12, 679);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(30, 30);
-            this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnLogout.TabIndex = 18;
-            this.btnLogout.TabStop = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
             // btnRelatorio
             // 
             this.btnRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(90)))), ((int)(((byte)(145)))));
+            this.btnRelatorio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRelatorio.FlatAppearance.BorderSize = 0;
             this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -383,6 +340,7 @@
             // btnEstoque
             // 
             this.btnEstoque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(90)))), ((int)(((byte)(145)))));
+            this.btnEstoque.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEstoque.FlatAppearance.BorderSize = 0;
             this.btnEstoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -400,6 +358,7 @@
             // btnFinanceiro
             // 
             this.btnFinanceiro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(90)))), ((int)(((byte)(145)))));
+            this.btnFinanceiro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinanceiro.FlatAppearance.BorderSize = 0;
             this.btnFinanceiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinanceiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -417,6 +376,7 @@
             // btnCadastro
             // 
             this.btnCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(90)))), ((int)(((byte)(145)))));
+            this.btnCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastro.FlatAppearance.BorderSize = 0;
             this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -442,6 +402,66 @@
             this.avatarMulher.TabIndex = 0;
             this.avatarMulher.TabStop = false;
             // 
+            // pnlTitle
+            // 
+            this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
+            this.pnlTitle.Controls.Add(this.btnFechar);
+            this.pnlTitle.Controls.Add(this.btnMinimizar);
+            this.pnlTitle.Controls.Add(this.btnMenu);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(200, 0);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(1084, 49);
+            this.pnlTitle.TabIndex = 1;
+            this.pnlTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.Image = global::View.Properties.Resources.fechar;
+            this.btnFechar.Location = new System.Drawing.Point(1050, 12);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(25, 25);
+            this.btnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnFechar.TabIndex = 2;
+            this.btnFechar.TabStop = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click_1);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Image = global::View.Properties.Resources.minimize;
+            this.btnMinimizar.Location = new System.Drawing.Point(1015, 12);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMinimizar.TabIndex = 1;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click_1);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.Image = global::View.Properties.Resources.Menu;
+            this.btnMenu.Location = new System.Drawing.Point(6, 7);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(30, 30);
+            this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMenu.TabIndex = 0;
+            this.btnMenu.TabStop = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // pnlView
+            // 
+            this.pnlView.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlView.Location = new System.Drawing.Point(200, 49);
+            this.pnlView.Name = "pnlView";
+            this.pnlView.Size = new System.Drawing.Size(1084, 672);
+            this.pnlView.TabIndex = 2;
+            // 
             // FrmPainelPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -457,13 +477,13 @@
             this.Text = "FrmPainelPrincipal";
             this.pnlMenuVertical.ResumeLayout(false);
             this.pnlMenuVertical.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarHomen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarMulher)).EndInit();
             this.pnlTitle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avatarHomen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avatarMulher)).EndInit();
             this.ResumeLayout(false);
 
         }

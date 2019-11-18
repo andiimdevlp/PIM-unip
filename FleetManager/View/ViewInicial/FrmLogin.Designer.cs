@@ -130,6 +130,7 @@
             this.lnkRecuperarSenha.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(135)))), ((int)(((byte)(195)))));
             this.lnkRecuperarSenha.AutoSize = true;
             this.lnkRecuperarSenha.BackColor = System.Drawing.Color.Transparent;
+            this.lnkRecuperarSenha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lnkRecuperarSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(35)))), ((int)(((byte)(56)))));
             this.lnkRecuperarSenha.Location = new System.Drawing.Point(236, 552);
             this.lnkRecuperarSenha.Name = "lnkRecuperarSenha";
@@ -178,6 +179,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::View.Properties.Resources.fechar;
             this.pictureBox3.Location = new System.Drawing.Point(427, 3);
             this.pictureBox3.Name = "pictureBox3";
@@ -189,6 +191,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::View.Properties.Resources.minimize;
             this.pictureBox4.Location = new System.Drawing.Point(401, 3);
             this.pictureBox4.Name = "pictureBox4";

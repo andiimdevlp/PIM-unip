@@ -27,7 +27,6 @@ namespace View
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
-        Point Origem = new Point(12,12);
         private void panel2_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -39,10 +38,36 @@ namespace View
             if (pnlMenuVertical.Width == 200)
             {
                 pnlMenuVertical.Width = 85;
+                Point Financeiro = new Point(12, 174);
+                Point Relatorio = new Point(12, 210);
+
+                btnFinanceiro.Location = Financeiro;
+                btnRelatorio.Location = Relatorio;
+
+                btnCadastroCarro.Visible = false;
+                btnCadastroContrato.Visible = false;
+                btnCadastroDespesa.Visible = false;
+                btnFinContasPagar.Visible = false;
+                btnFinSinistros.Visible = false;
+                btnRelGastoFrota.Visible = false;
+
             }
             else
             {
                 pnlMenuVertical.Width = 200;
+
+                Point Financeiro = new Point(12, 270);
+                Point Relatorio = new Point(12, 370);
+
+                btnFinanceiro.Location = Financeiro;
+                btnRelatorio.Location = Relatorio;
+
+                btnCadastroCarro.Visible = true;
+                btnCadastroContrato.Visible = true;
+                btnCadastroDespesa.Visible = true;
+                btnFinContasPagar.Visible = true;
+                btnFinSinistros.Visible = true;
+                btnRelGastoFrota.Visible = true;
             }
         }
         private void btnFechar_Click_1(object sender, EventArgs e)

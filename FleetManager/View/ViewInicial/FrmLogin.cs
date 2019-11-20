@@ -76,7 +76,7 @@ namespace View
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtUsuarioLogin.Text != "Digite seu Usuario" && txtSenhaLogin.Text != "Digite sua Senha")
             {
@@ -84,10 +84,12 @@ namespace View
                 var validaLogin = user.LoginUser(txtUsuarioLogin.Text, txtSenhaLogin.Text);
                 if(validaLogin == true)
                 {
-                    FrmPainelPrincipal principal = new FrmPainelPrincipal();
-                    principal.Show();
-                    principal.FormClosed += Logout;
                     this.Hide();
+                    FrmProgressLogin progressLogin = new FrmProgressLogin();
+                    progressLogin.ShowDialog();
+                    FrmPainelPrincipal painelPrincipal = new FrmPainelPrincipal();
+                    painelPrincipal.Show();
+                    painelPrincipal.FormClosed += Logout;
                 }
                 else
                 {

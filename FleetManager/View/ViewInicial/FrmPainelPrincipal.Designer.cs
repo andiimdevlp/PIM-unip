@@ -34,20 +34,13 @@
             this.lblCargoLogado = new System.Windows.Forms.Label();
             this.lblNomeLogado = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.PictureBox();
-            this.btnEstoqueEstoque = new System.Windows.Forms.Button();
-            this.btnEstoqueReserva = new System.Windows.Forms.Button();
-            this.btnRelFaturamento = new System.Windows.Forms.Button();
             this.btnRelGastoFrota = new System.Windows.Forms.Button();
-            this.btnRelFinanceiro = new System.Windows.Forms.Button();
             this.btnFinSinistros = new System.Windows.Forms.Button();
-            this.btnFinContasReceber = new System.Windows.Forms.Button();
             this.btnFinContasPagar = new System.Windows.Forms.Button();
-            this.btnCadastroViagem = new System.Windows.Forms.Button();
             this.btnCadastroDespesa = new System.Windows.Forms.Button();
             this.btnCadastroContrato = new System.Windows.Forms.Button();
             this.btnCadastroCarro = new System.Windows.Forms.Button();
             this.btnRelatorio = new System.Windows.Forms.Button();
-            this.btnEstoque = new System.Windows.Forms.Button();
             this.btnFinanceiro = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.avatarMulher = new System.Windows.Forms.PictureBox();
@@ -74,20 +67,13 @@
             this.pnlMenuVertical.Controls.Add(this.lblCargoLogado);
             this.pnlMenuVertical.Controls.Add(this.lblNomeLogado);
             this.pnlMenuVertical.Controls.Add(this.btnLogout);
-            this.pnlMenuVertical.Controls.Add(this.btnEstoqueEstoque);
-            this.pnlMenuVertical.Controls.Add(this.btnEstoqueReserva);
-            this.pnlMenuVertical.Controls.Add(this.btnRelFaturamento);
             this.pnlMenuVertical.Controls.Add(this.btnRelGastoFrota);
-            this.pnlMenuVertical.Controls.Add(this.btnRelFinanceiro);
             this.pnlMenuVertical.Controls.Add(this.btnFinSinistros);
-            this.pnlMenuVertical.Controls.Add(this.btnFinContasReceber);
             this.pnlMenuVertical.Controls.Add(this.btnFinContasPagar);
-            this.pnlMenuVertical.Controls.Add(this.btnCadastroViagem);
             this.pnlMenuVertical.Controls.Add(this.btnCadastroDespesa);
             this.pnlMenuVertical.Controls.Add(this.btnCadastroContrato);
             this.pnlMenuVertical.Controls.Add(this.btnCadastroCarro);
             this.pnlMenuVertical.Controls.Add(this.btnRelatorio);
-            this.pnlMenuVertical.Controls.Add(this.btnEstoque);
             this.pnlMenuVertical.Controls.Add(this.btnFinanceiro);
             this.pnlMenuVertical.Controls.Add(this.btnCadastro);
             this.pnlMenuVertical.Controls.Add(this.avatarMulher);
@@ -147,55 +133,13 @@
             this.btnLogout.TabStop = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnEstoqueEstoque
-            // 
-            this.btnEstoqueEstoque.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEstoqueEstoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstoqueEstoque.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstoqueEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
-            this.btnEstoqueEstoque.Location = new System.Drawing.Point(32, 369);
-            this.btnEstoqueEstoque.Name = "btnEstoqueEstoque";
-            this.btnEstoqueEstoque.Size = new System.Drawing.Size(139, 26);
-            this.btnEstoqueEstoque.TabIndex = 17;
-            this.btnEstoqueEstoque.Text = "Estoque";
-            this.btnEstoqueEstoque.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstoqueEstoque.UseVisualStyleBackColor = true;
-            // 
-            // btnEstoqueReserva
-            // 
-            this.btnEstoqueReserva.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEstoqueReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstoqueReserva.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstoqueReserva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
-            this.btnEstoqueReserva.Location = new System.Drawing.Point(32, 337);
-            this.btnEstoqueReserva.Name = "btnEstoqueReserva";
-            this.btnEstoqueReserva.Size = new System.Drawing.Size(139, 26);
-            this.btnEstoqueReserva.TabIndex = 16;
-            this.btnEstoqueReserva.Text = "Reserva";
-            this.btnEstoqueReserva.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstoqueReserva.UseVisualStyleBackColor = true;
-            // 
-            // btnRelFaturamento
-            // 
-            this.btnRelFaturamento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRelFaturamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRelFaturamento.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelFaturamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
-            this.btnRelFaturamento.Location = new System.Drawing.Point(32, 632);
-            this.btnRelFaturamento.Name = "btnRelFaturamento";
-            this.btnRelFaturamento.Size = new System.Drawing.Size(139, 26);
-            this.btnRelFaturamento.TabIndex = 15;
-            this.btnRelFaturamento.Text = "Faturamento";
-            this.btnRelFaturamento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelFaturamento.UseVisualStyleBackColor = true;
-            // 
             // btnRelGastoFrota
             // 
             this.btnRelGastoFrota.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRelGastoFrota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRelGastoFrota.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRelGastoFrota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
-            this.btnRelGastoFrota.Location = new System.Drawing.Point(32, 600);
+            this.btnRelGastoFrota.Location = new System.Drawing.Point(32, 406);
             this.btnRelGastoFrota.Name = "btnRelGastoFrota";
             this.btnRelGastoFrota.Size = new System.Drawing.Size(139, 26);
             this.btnRelGastoFrota.TabIndex = 14;
@@ -203,27 +147,13 @@
             this.btnRelGastoFrota.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRelGastoFrota.UseVisualStyleBackColor = true;
             // 
-            // btnRelFinanceiro
-            // 
-            this.btnRelFinanceiro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRelFinanceiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRelFinanceiro.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelFinanceiro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
-            this.btnRelFinanceiro.Location = new System.Drawing.Point(32, 568);
-            this.btnRelFinanceiro.Name = "btnRelFinanceiro";
-            this.btnRelFinanceiro.Size = new System.Drawing.Size(139, 26);
-            this.btnRelFinanceiro.TabIndex = 13;
-            this.btnRelFinanceiro.Text = "Rel. Financeiro";
-            this.btnRelFinanceiro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelFinanceiro.UseVisualStyleBackColor = true;
-            // 
             // btnFinSinistros
             // 
             this.btnFinSinistros.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinSinistros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinSinistros.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinSinistros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
-            this.btnFinSinistros.Location = new System.Drawing.Point(32, 500);
+            this.btnFinSinistros.Location = new System.Drawing.Point(32, 338);
             this.btnFinSinistros.Name = "btnFinSinistros";
             this.btnFinSinistros.Size = new System.Drawing.Size(139, 26);
             this.btnFinSinistros.TabIndex = 12;
@@ -231,27 +161,13 @@
             this.btnFinSinistros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFinSinistros.UseVisualStyleBackColor = true;
             // 
-            // btnFinContasReceber
-            // 
-            this.btnFinContasReceber.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFinContasReceber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinContasReceber.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinContasReceber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
-            this.btnFinContasReceber.Location = new System.Drawing.Point(32, 468);
-            this.btnFinContasReceber.Name = "btnFinContasReceber";
-            this.btnFinContasReceber.Size = new System.Drawing.Size(139, 26);
-            this.btnFinContasReceber.TabIndex = 11;
-            this.btnFinContasReceber.Text = "Contas a Receber";
-            this.btnFinContasReceber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinContasReceber.UseVisualStyleBackColor = true;
-            // 
             // btnFinContasPagar
             // 
             this.btnFinContasPagar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinContasPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinContasPagar.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinContasPagar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
-            this.btnFinContasPagar.Location = new System.Drawing.Point(32, 436);
+            this.btnFinContasPagar.Location = new System.Drawing.Point(32, 306);
             this.btnFinContasPagar.Name = "btnFinContasPagar";
             this.btnFinContasPagar.Size = new System.Drawing.Size(139, 26);
             this.btnFinContasPagar.TabIndex = 10;
@@ -259,20 +175,6 @@
             this.btnFinContasPagar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFinContasPagar.UseVisualStyleBackColor = true;
             this.btnFinContasPagar.Click += new System.EventHandler(this.btnFinContasPagar_Click);
-            // 
-            // btnCadastroViagem
-            // 
-            this.btnCadastroViagem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCadastroViagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastroViagem.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastroViagem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(40)))));
-            this.btnCadastroViagem.Location = new System.Drawing.Point(32, 270);
-            this.btnCadastroViagem.Name = "btnCadastroViagem";
-            this.btnCadastroViagem.Size = new System.Drawing.Size(139, 26);
-            this.btnCadastroViagem.TabIndex = 9;
-            this.btnCadastroViagem.Text = "Viagens";
-            this.btnCadastroViagem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadastroViagem.UseVisualStyleBackColor = true;
             // 
             // btnCadastroDespesa
             // 
@@ -329,31 +231,13 @@
             this.btnRelatorio.ForeColor = System.Drawing.Color.LightGray;
             this.btnRelatorio.Image = global::View.Properties.Resources.Relatorio;
             this.btnRelatorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelatorio.Location = new System.Drawing.Point(12, 532);
+            this.btnRelatorio.Location = new System.Drawing.Point(12, 370);
             this.btnRelatorio.Name = "btnRelatorio";
             this.btnRelatorio.Size = new System.Drawing.Size(168, 30);
             this.btnRelatorio.TabIndex = 4;
             this.btnRelatorio.Text = "Relatorios";
             this.btnRelatorio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRelatorio.UseVisualStyleBackColor = false;
-            // 
-            // btnEstoque
-            // 
-            this.btnEstoque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(90)))), ((int)(((byte)(145)))));
-            this.btnEstoque.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEstoque.FlatAppearance.BorderSize = 0;
-            this.btnEstoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstoque.ForeColor = System.Drawing.Color.LightGray;
-            this.btnEstoque.Image = global::View.Properties.Resources.Estoque_;
-            this.btnEstoque.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstoque.Location = new System.Drawing.Point(12, 301);
-            this.btnEstoque.Name = "btnEstoque";
-            this.btnEstoque.Size = new System.Drawing.Size(168, 30);
-            this.btnEstoque.TabIndex = 2;
-            this.btnEstoque.Text = "Estoque   ";
-            this.btnEstoque.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEstoque.UseVisualStyleBackColor = false;
             // 
             // btnFinanceiro
             // 
@@ -365,7 +249,7 @@
             this.btnFinanceiro.ForeColor = System.Drawing.Color.LightGray;
             this.btnFinanceiro.Image = global::View.Properties.Resources.Financeiro;
             this.btnFinanceiro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinanceiro.Location = new System.Drawing.Point(12, 400);
+            this.btnFinanceiro.Location = new System.Drawing.Point(12, 270);
             this.btnFinanceiro.Name = "btnFinanceiro";
             this.btnFinanceiro.Size = new System.Drawing.Size(168, 30);
             this.btnFinanceiro.TabIndex = 3;
@@ -497,22 +381,15 @@
         private System.Windows.Forms.PictureBox avatarMulher;
         private System.Windows.Forms.PictureBox btnFechar;
         private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.Button btnEstoque;
         private System.Windows.Forms.Button btnFinanceiro;
         private System.Windows.Forms.Button btnCadastro;
         private System.Windows.Forms.Button btnRelatorio;
         private System.Windows.Forms.Button btnRelGastoFrota;
-        private System.Windows.Forms.Button btnRelFinanceiro;
         private System.Windows.Forms.Button btnFinSinistros;
         private System.Windows.Forms.Button btnFinContasPagar;
-        private System.Windows.Forms.Button btnCadastroViagem;
         private System.Windows.Forms.Button btnCadastroDespesa;
         private System.Windows.Forms.Button btnCadastroContrato;
         private System.Windows.Forms.Button btnCadastroCarro;
-        private System.Windows.Forms.Button btnRelFaturamento;
-        private System.Windows.Forms.Button btnEstoqueEstoque;
-        private System.Windows.Forms.Button btnEstoqueReserva;
-        private System.Windows.Forms.Button btnFinContasReceber;
         private System.Windows.Forms.PictureBox btnLogout;
         private System.Windows.Forms.Label lblEmailLogado;
         private System.Windows.Forms.Label lblCargoLogado;

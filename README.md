@@ -3,10 +3,10 @@
 Desenvolver um sistema para gerenciar e administrar frotas de veículos no território nacional. 
 
 # Objetivos Específicos 
-  • Compreender e aplicar os conhecimentos adquiridos em sala de aula; 
-  • Desenvolver aplicações desktop, web e mobile. 
-  • Entender o ciclo de vida dos projetos, definir escopo e prazo, calcular os custos. Aplicar o gerenciamento de riscos; 
-  • Projetar a arquitetura do sistema; 
+  • Compreender e aplicar os conhecimentos adquiridos em sala de aula;
+  • Desenvolver aplicações desktop, web e mobile.
+  • Entender o ciclo de vida dos projetos, definir escopo e prazo, calcular os custos. Aplicar o gerenciamento de riscos;
+  • Projetar a arquitetura do sistema;
   • Utilizar UML no Projeto Orientado a Objetos; 
   • Desenvolver técnicas usadas na produção de artefatos UML; 
   • Desenvolver aplicações em ASP.NET com acesso a dados; e 

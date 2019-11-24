@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace View.financeiro
+namespace View.relatorios
 {
-    public partial class FrmContasPagar : Form
+    public partial class FrmRelatorio : Form
     {
-        public FrmContasPagar()
+        public FrmRelatorio()
         {
             InitializeComponent();
         }

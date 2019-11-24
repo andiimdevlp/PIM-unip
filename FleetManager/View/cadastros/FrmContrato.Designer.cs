@@ -83,18 +83,18 @@
             // 
             // txtCliente
             // 
-            this.txtCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCliente.Location = new System.Drawing.Point(121, 50);
             this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(213, 13);
+            this.txtCliente.Size = new System.Drawing.Size(213, 20);
             this.txtCliente.TabIndex = 8;
             // 
             // txtPlaca
             // 
-            this.txtPlaca.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPlaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPlaca.Location = new System.Drawing.Point(121, 156);
             this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(77, 13);
+            this.txtPlaca.Size = new System.Drawing.Size(77, 20);
             this.txtPlaca.TabIndex = 11;
             // 
             // dtInicio
@@ -126,10 +126,10 @@
             // 
             // txtIe
             // 
-            this.txtIe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIe.Location = new System.Drawing.Point(121, 101);
             this.txtIe.Name = "txtIe";
-            this.txtIe.Size = new System.Drawing.Size(177, 13);
+            this.txtIe.Size = new System.Drawing.Size(177, 20);
             this.txtIe.TabIndex = 14;
             // 
             // txtContrato
@@ -152,10 +152,10 @@
             // 
             // txtIdCliente
             // 
-            this.txtIdCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIdCliente.Location = new System.Drawing.Point(422, 50);
             this.txtIdCliente.Name = "txtIdCliente";
-            this.txtIdCliente.Size = new System.Drawing.Size(77, 13);
+            this.txtIdCliente.Size = new System.Drawing.Size(99, 20);
             this.txtIdCliente.TabIndex = 18;
             // 
             // btnAdicionarPlaca

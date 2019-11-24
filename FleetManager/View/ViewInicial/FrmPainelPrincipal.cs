@@ -134,7 +134,6 @@ namespace View
 
         private void btnFinContasPagar_Click(object sender, EventArgs e)
         {
-            AbrirFromulario<FrmContasPagar>();
         }
 
         private void btnCadastroContrato_Click(object sender, EventArgs e)

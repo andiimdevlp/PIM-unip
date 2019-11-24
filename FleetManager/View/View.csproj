@@ -73,17 +73,17 @@
     <Compile Include="cadastros\FrmDespesa.Designer.cs">
       <DependentUpon>FrmDespesa.cs</DependentUpon>
     </Compile>
-    <Compile Include="financeiro\FrmContasPagar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="financeiro\FrmContasPagar.Designer.cs">
-      <DependentUpon>FrmContasPagar.cs</DependentUpon>
-    </Compile>
     <Compile Include="financeiro\FrmSinistro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="financeiro\FrmSinistro.Designer.cs">
       <DependentUpon>FrmSinistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="relatorios\FrmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="relatorios\FrmRelatorio.Designer.cs">
+      <DependentUpon>FrmRelatorio.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewInicial\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -120,11 +120,11 @@
     <EmbeddedResource Include="cadastros\FrmDespesa.resx">
       <DependentUpon>FrmDespesa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="financeiro\FrmContasPagar.resx">
-      <DependentUpon>FrmContasPagar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="financeiro\FrmSinistro.resx">
       <DependentUpon>FrmSinistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="relatorios\FrmRelatorio.resx">
+      <DependentUpon>FrmRelatorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewInicial\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

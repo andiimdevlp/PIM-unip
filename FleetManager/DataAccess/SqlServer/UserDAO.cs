@@ -21,7 +21,7 @@ namespace Model
                     cmd.Connection = con;
                     cmd.Parameters.AddWithValue("@user", user);
                     cmd.Parameters.AddWithValue("@pass", pass);
-                    cmd.CommandText = "select HASHBYTES('sha1','@pass') from usuarios where usuario=@user";
+                    cmd.CommandText = "select HASHBYTES('sha1','@pass') from usuario where login=@user";
                     cmd.CommandType = CommandType.Text;
                     SqlDataReader reader = cmd.ExecuteReader();
 
@@ -49,7 +49,7 @@ namespace Model
                 using (var cmd = new SqlCommand())
                 {
                     cmd.Connection = con;
-                    cmd.CommandText = "select * from  usuarios where usuario=@user or email=@email";
+                    cmd.CommandText = "select * from  usuario where login=@user or email=@email";
                     cmd.Parameters.AddWithValue("@user", userRequesting);
                     cmd.Parameters.AddWithValue("@email", userRequesting);
                     cmd.CommandType = CommandType.Text;

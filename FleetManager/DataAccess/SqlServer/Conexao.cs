@@ -7,16 +7,34 @@ using System.Data.SqlClient;
 
 namespace Model
 {
-    public abstract class Conexao
+    public class Conexao
     {
+        private SqlConnection Conectar = new SqlConnection("server=(local)\\SQLEXPRESS;DataBase=terracluster; integrated security=true");
+
+        public SqlConnection AbrirConexao()
+        {
+            if (Conectar.State == System.Data.ConnectionState.Closed)
+                Conectar.Open();
+            return Conectar;
+        }
+
+        public SqlConnection FecharConexao()
+        {
+            if (Conectar.State == System.Data.ConnectionState.Open)
+                Conectar.Close();
+            return Conectar;
+        }
+
         private readonly string connectionString;
         public Conexao()
         {
-            connectionString = "server=DESKTOP-8B1VJMJ\\SQLEXPRESS;DataBase=FLEETMANAGER; integrated security=true";
+            connectionString = "server=(local)\\SQLEXPRESS;DataBase=terracluster; integrated security=true";
         }
         protected SqlConnection GetConnection()
         {
             return new SqlConnection(connectionString);
         }
+
     }
+    
 }

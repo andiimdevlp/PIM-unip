@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblPlaca = new System.Windows.Forms.Label();
             this.lblModelo = new System.Windows.Forms.Label();
             this.lblAno = new System.Windows.Forms.Label();
@@ -42,13 +43,14 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.btnSalvarCarro = new System.Windows.Forms.Button();
             this.btnExcluirCarro = new System.Windows.Forms.Button();
-            this.dbCarros = new System.Windows.Forms.DataGridView();
             this.lblCombustivel = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dbCarros)).BeginInit();
+            this.veiculoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.controleCarroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.SuspendLayout();
             // 
             // lblPlaca
@@ -172,15 +174,6 @@
             this.btnExcluirCarro.Text = "Excluir";
             this.btnExcluirCarro.UseVisualStyleBackColor = true;
             // 
-            // dbCarros
-            // 
-            this.dbCarros.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dbCarros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dbCarros.Location = new System.Drawing.Point(65, 246);
-            this.dbCarros.Name = "dbCarros";
-            this.dbCarros.Size = new System.Drawing.Size(957, 382);
-            this.dbCarros.TabIndex = 22;
-            // 
             // lblCombustivel
             // 
             this.lblCombustivel.AutoSize = true;
@@ -244,17 +237,39 @@
             this.listBox2.Size = new System.Drawing.Size(120, 52);
             this.listBox2.TabIndex = 27;
             // 
+            // terraclusterDataSet
+            // 
+            // 
+            // veiculoBindingSource
+            // 
+            this.veiculoBindingSource.DataMember = "veiculo";
+            // 
+            // veiculoTableAdapter
+            // 
+            // 
+            // controleCarroBindingSource
+            // 
+            this.controleCarroBindingSource.DataSource = typeof(Control.ControleCarro);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(159, 304);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(743, 296);
+            this.dataGridView1.TabIndex = 28;
+            // 
             // FrmCarros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 672);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblCombustivel);
-            this.Controls.Add(this.dbCarros);
             this.Controls.Add(this.btnExcluirCarro);
             this.Controls.Add(this.btnSalvarCarro);
             this.Controls.Add(this.textBox6);
@@ -274,7 +289,10 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCarros";
-            ((System.ComponentModel.ISupportInitialize)(this.dbCarros)).EndInit();
+            this.Load += new System.EventHandler(this.FrmCarros_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.veiculoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.controleCarroBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,11 +314,13 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button btnSalvarCarro;
         private System.Windows.Forms.Button btnExcluirCarro;
-        private System.Windows.Forms.DataGridView dbCarros;
         private System.Windows.Forms.Label lblCombustivel;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.BindingSource veiculoBindingSource;
+        private System.Windows.Forms.BindingSource controleCarroBindingSource;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

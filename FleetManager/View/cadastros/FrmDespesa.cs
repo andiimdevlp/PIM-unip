@@ -16,5 +16,10 @@ namespace View.cadastros
         {
             InitializeComponent();
         }
+
+        private void FrmDespesa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

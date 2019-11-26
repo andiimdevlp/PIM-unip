@@ -339,7 +339,7 @@
             // 
             // pnlView
             // 
-            this.pnlView.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
             this.pnlView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlView.Location = new System.Drawing.Point(200, 49);
             this.pnlView.Name = "pnlView";

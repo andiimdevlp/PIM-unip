@@ -41,7 +41,7 @@ namespace View.cadastros
             }
             catch(Exception)
             {
-                MessageBox.Show("O veiculo não inserido.\nCertifique-se de preencher os dados\ncorretos e não repetidos. ");
+                MessageBox.Show("O veiculo não inserido.\nCertifique-se de preencher os dados\ncorretos e não repetidos.");
             }
             txtAno.Clear();
             txtCor.Clear();
@@ -49,6 +49,26 @@ namespace View.cadastros
             txtPlaca.Clear();
             txtRenavam.Clear();
             ltModelo.ClearSelected();
+        }
+
+        private void btnExcluirCarro_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                txtPlaca.Text = dataGridView1.CurrentRow.Cells["placa"].Value.ToString();
+                txtRenavam.Text = dataGridView1.CurrentRow.Cells["renavam"].Value.ToString();
+                objetoControleCarro.ExcluirCarro(txtPlaca.Text, txtRenavam.Text);
+                MessageBox.Show("Veiculo excluido!");
+                MostrarCarro();
+
+            }
+            else
+            {
+                MessageBox.Show("Selecione a linha que deseja excluir");
+            }
+            
+            txtPlaca.Clear();
+            txtRenavam.Clear();
         }
     }
 }

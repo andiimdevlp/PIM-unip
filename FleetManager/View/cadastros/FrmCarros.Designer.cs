@@ -43,93 +43,127 @@
             this.lblCategoria = new System.Windows.Forms.Label();
             this.ltModelo = new System.Windows.Forms.ListBox();
             this.veiculoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.controleCarroBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtAno = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.controleCarroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.veiculoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.controleCarroBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.controleCarroBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPlaca
             // 
+            this.lblPlaca.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPlaca.AutoSize = true;
-            this.lblPlaca.Location = new System.Drawing.Point(110, 37);
+            this.lblPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlaca.ForeColor = System.Drawing.Color.White;
+            this.lblPlaca.Location = new System.Drawing.Point(137, 37);
             this.lblPlaca.Name = "lblPlaca";
-            this.lblPlaca.Size = new System.Drawing.Size(40, 13);
+            this.lblPlaca.Size = new System.Drawing.Size(51, 17);
             this.lblPlaca.TabIndex = 0;
             this.lblPlaca.Text = "Placa :";
             // 
             // lblModelo
             // 
+            this.lblModelo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblModelo.AutoSize = true;
-            this.lblModelo.Location = new System.Drawing.Point(107, 71);
+            this.lblModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModelo.ForeColor = System.Drawing.Color.White;
+            this.lblModelo.Location = new System.Drawing.Point(134, 71);
             this.lblModelo.Name = "lblModelo";
-            this.lblModelo.Size = new System.Drawing.Size(43, 13);
+            this.lblModelo.Size = new System.Drawing.Size(55, 17);
             this.lblModelo.TabIndex = 1;
             this.lblModelo.Text = "Marca :";
             // 
             // lblAno
             // 
+            this.lblAno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAno.AutoSize = true;
-            this.lblAno.Location = new System.Drawing.Point(118, 101);
+            this.lblAno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAno.ForeColor = System.Drawing.Color.White;
+            this.lblAno.Location = new System.Drawing.Point(145, 101);
             this.lblAno.Name = "lblAno";
-            this.lblAno.Size = new System.Drawing.Size(32, 13);
+            this.lblAno.Size = new System.Drawing.Size(41, 17);
             this.lblAno.TabIndex = 2;
             this.lblAno.Text = "Ano :";
             // 
             // lblRenavam
             // 
+            this.lblRenavam.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRenavam.AutoSize = true;
-            this.lblRenavam.Location = new System.Drawing.Point(464, 71);
+            this.lblRenavam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRenavam.ForeColor = System.Drawing.Color.White;
+            this.lblRenavam.Location = new System.Drawing.Point(581, 75);
             this.lblRenavam.Name = "lblRenavam";
-            this.lblRenavam.Size = new System.Drawing.Size(59, 13);
+            this.lblRenavam.Size = new System.Drawing.Size(76, 17);
             this.lblRenavam.TabIndex = 5;
             this.lblRenavam.Text = "Renavam :";
             // 
             // lblCor
             // 
+            this.lblCor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCor.AutoSize = true;
-            this.lblCor.Location = new System.Drawing.Point(494, 33);
+            this.lblCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCor.ForeColor = System.Drawing.Color.White;
+            this.lblCor.Location = new System.Drawing.Point(611, 37);
             this.lblCor.Name = "lblCor";
-            this.lblCor.Size = new System.Drawing.Size(29, 13);
+            this.lblCor.Size = new System.Drawing.Size(38, 17);
             this.lblCor.TabIndex = 4;
             this.lblCor.Text = "Cor :";
             // 
             // txtPlaca
             // 
-            this.txtPlaca.Location = new System.Drawing.Point(171, 30);
+            this.txtPlaca.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPlaca.ForeColor = System.Drawing.Color.Black;
+            this.txtPlaca.Location = new System.Drawing.Point(198, 30);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(194, 20);
             this.txtPlaca.TabIndex = 13;
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(171, 64);
+            this.txtMarca.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMarca.ForeColor = System.Drawing.Color.Black;
+            this.txtMarca.Location = new System.Drawing.Point(198, 64);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(194, 20);
             this.txtMarca.TabIndex = 14;
             // 
             // txtCor
             // 
-            this.txtCor.Location = new System.Drawing.Point(550, 30);
+            this.txtCor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCor.ForeColor = System.Drawing.Color.Black;
+            this.txtCor.Location = new System.Drawing.Point(667, 34);
             this.txtCor.Name = "txtCor";
             this.txtCor.Size = new System.Drawing.Size(188, 20);
             this.txtCor.TabIndex = 16;
             // 
             // txtRenavam
             // 
-            this.txtRenavam.Location = new System.Drawing.Point(550, 64);
+            this.txtRenavam.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRenavam.ForeColor = System.Drawing.Color.Black;
+            this.txtRenavam.Location = new System.Drawing.Point(667, 68);
             this.txtRenavam.Name = "txtRenavam";
             this.txtRenavam.Size = new System.Drawing.Size(188, 20);
             this.txtRenavam.TabIndex = 17;
             // 
             // btnSalvarCarro
             // 
+            this.btnSalvarCarro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnSalvarCarro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvarCarro.FlatAppearance.BorderSize = 0;
             this.btnSalvarCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvarCarro.Location = new System.Drawing.Point(540, 168);
+            this.btnSalvarCarro.ForeColor = System.Drawing.Color.White;
+            this.btnSalvarCarro.Location = new System.Drawing.Point(657, 172);
             this.btnSalvarCarro.Name = "btnSalvarCarro";
             this.btnSalvarCarro.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarCarro.TabIndex = 19;
@@ -139,36 +173,47 @@
             // 
             // btnExcluirCarro
             // 
+            this.btnExcluirCarro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnExcluirCarro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcluirCarro.FlatAppearance.BorderSize = 0;
             this.btnExcluirCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluirCarro.Location = new System.Drawing.Point(644, 168);
+            this.btnExcluirCarro.ForeColor = System.Drawing.Color.White;
+            this.btnExcluirCarro.Location = new System.Drawing.Point(761, 172);
             this.btnExcluirCarro.Name = "btnExcluirCarro";
             this.btnExcluirCarro.Size = new System.Drawing.Size(75, 23);
             this.btnExcluirCarro.TabIndex = 20;
             this.btnExcluirCarro.Text = "Excluir";
             this.btnExcluirCarro.UseVisualStyleBackColor = true;
+            this.btnExcluirCarro.Click += new System.EventHandler(this.btnExcluirCarro_Click);
             // 
             // lblCategoria
             // 
+            this.lblCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(85, 139);
+            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.ForeColor = System.Drawing.Color.White;
+            this.lblCategoria.Location = new System.Drawing.Point(112, 139);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(58, 13);
+            this.lblCategoria.Size = new System.Drawing.Size(77, 17);
             this.lblCategoria.TabIndex = 24;
             this.lblCategoria.Text = "Categoria :";
             // 
             // ltModelo
             // 
-            this.ltModelo.BackColor = System.Drawing.SystemColors.Control;
+            this.ltModelo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ltModelo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
             this.ltModelo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ltModelo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ltModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltModelo.ForeColor = System.Drawing.Color.White;
             this.ltModelo.FormattingEnabled = true;
             this.ltModelo.Items.AddRange(new object[] {
             "Passeio",
             "Caminhão",
             "Passageiros"});
-            this.ltModelo.Location = new System.Drawing.Point(171, 139);
+            this.ltModelo.Location = new System.Drawing.Point(198, 139);
             this.ltModelo.Name = "ltModelo";
             this.ltModelo.Size = new System.Drawing.Size(120, 52);
             this.ltModelo.TabIndex = 27;
@@ -177,31 +222,34 @@
             // 
             this.veiculoBindingSource.DataMember = "veiculo";
             // 
-            // controleCarroBindingSource
-            // 
-            this.controleCarroBindingSource.DataSource = typeof(Control.ControleCarro);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(88, 240);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(882, 360);
-            this.dataGridView1.TabIndex = 28;
-            // 
             // txtAno
             // 
-            this.txtAno.Location = new System.Drawing.Point(171, 94);
+            this.txtAno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAno.ForeColor = System.Drawing.Color.Black;
+            this.txtAno.Location = new System.Drawing.Point(198, 94);
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(194, 20);
             this.txtAno.TabIndex = 15;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(65, 255);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(937, 371);
+            this.dataGridView1.TabIndex = 28;
+            // 
+            // controleCarroBindingSource
+            // 
+            this.controleCarroBindingSource.DataSource = typeof(Control.ControleCarro);
             // 
             // FrmCarros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
             this.ClientSize = new System.Drawing.Size(1084, 672);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ltModelo);
@@ -225,8 +273,8 @@
             this.Text = "FrmCarros";
             this.Load += new System.EventHandler(this.FrmCarros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.veiculoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.controleCarroBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.controleCarroBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,7 +297,7 @@
         private System.Windows.Forms.ListBox ltModelo;
         private System.Windows.Forms.BindingSource veiculoBindingSource;
         private System.Windows.Forms.BindingSource controleCarroBindingSource;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtAno;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -18,7 +18,9 @@ namespace Model
         public DataTable Mostrar()
         {
             cmd.Connection = con.AbrirConexao();
-            cmd.CommandText = "select * from veiculo";
+            //cmd.CommandText = "select placa as PLACA, * from veiculo";
+            cmd.CommandText = "MostrarCarro";
+            cmd.CommandType = CommandType.StoredProcedure;
             ler = cmd.ExecuteReader();
             tabela.Load(ler);
             con.FecharConexao();
@@ -39,6 +41,19 @@ namespace Model
             cmd.ExecuteNonQuery();
 
             cmd.Parameters.Clear();
+        }
+
+        public void Excluir(string placa, string renavam)
+        {
+            cmd.Connection = con.AbrirConexao();
+            cmd.CommandText = "ExcluirCarro";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@placa", placa);
+            cmd.Parameters.AddWithValue("@renavam", renavam);
+            cmd.ExecuteNonQuery();
+
+            cmd.Parameters.Clear();
+
         }
 
     }

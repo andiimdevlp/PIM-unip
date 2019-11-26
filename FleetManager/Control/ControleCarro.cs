@@ -23,5 +23,10 @@ namespace Control
         {
             objetodadosCarro.Insert(placa, modelo, cor, ano, renavam, marca);
         }
+
+        public void ExcluirCarro (string placa, string renavam)
+        {
+            objetodadosCarro.Excluir(placa, renavam);
+        }
     }
 }

@@ -25,5 +25,21 @@ namespace Model
             return tabela;
         }
 
+        public void Insert(string placa, string modelo, string cor, string ano, string renavam, string marca)
+        {
+            cmd.Connection = con.AbrirConexao();
+            cmd.CommandText = "InserirCarro";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@placa", placa);
+            cmd.Parameters.AddWithValue("@modelo", modelo);
+            cmd.Parameters.AddWithValue("@cor", cor);
+            cmd.Parameters.AddWithValue("@ano", ano);
+            cmd.Parameters.AddWithValue("@renavam", renavam);
+            cmd.Parameters.AddWithValue("@marca", marca);
+            cmd.ExecuteNonQuery();
+
+            cmd.Parameters.Clear();
+        }
+
     }
 }

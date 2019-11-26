@@ -19,5 +19,9 @@ namespace Control
             tabela = objetodadosCarro.Mostrar();
             return tabela;
         }
+        public void InsertCarro (string placa, string modelo, string cor, string ano, string renavam, string marca)
+        {
+            objetodadosCarro.Insert(placa, modelo, cor, ano, renavam, marca);
+        }
     }
 }

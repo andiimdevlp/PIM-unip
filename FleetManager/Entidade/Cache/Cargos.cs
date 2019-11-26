@@ -11,5 +11,7 @@ namespace Entidade.Cache
         public const string Adiminstrador = "ADM";
         public const string Recepcionista = "RECEPT";
         public const string Contador = "CONTADOR";
+        public const string Diretoria = "DIRETORIA";
+
     }
 }

@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblPlaca = new System.Windows.Forms.Label();
             this.lblModelo = new System.Windows.Forms.Label();
             this.lblAno = new System.Windows.Forms.Label();
@@ -58,7 +61,7 @@
             this.lblPlaca.AutoSize = true;
             this.lblPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlaca.ForeColor = System.Drawing.Color.White;
-            this.lblPlaca.Location = new System.Drawing.Point(137, 37);
+            this.lblPlaca.Location = new System.Drawing.Point(59, 109);
             this.lblPlaca.Name = "lblPlaca";
             this.lblPlaca.Size = new System.Drawing.Size(51, 17);
             this.lblPlaca.TabIndex = 0;
@@ -71,7 +74,7 @@
             this.lblModelo.AutoSize = true;
             this.lblModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModelo.ForeColor = System.Drawing.Color.White;
-            this.lblModelo.Location = new System.Drawing.Point(134, 71);
+            this.lblModelo.Location = new System.Drawing.Point(56, 147);
             this.lblModelo.Name = "lblModelo";
             this.lblModelo.Size = new System.Drawing.Size(55, 17);
             this.lblModelo.TabIndex = 1;
@@ -84,7 +87,7 @@
             this.lblAno.AutoSize = true;
             this.lblAno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAno.ForeColor = System.Drawing.Color.White;
-            this.lblAno.Location = new System.Drawing.Point(145, 101);
+            this.lblAno.Location = new System.Drawing.Point(67, 184);
             this.lblAno.Name = "lblAno";
             this.lblAno.Size = new System.Drawing.Size(41, 17);
             this.lblAno.TabIndex = 2;
@@ -97,7 +100,7 @@
             this.lblRenavam.AutoSize = true;
             this.lblRenavam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRenavam.ForeColor = System.Drawing.Color.White;
-            this.lblRenavam.Location = new System.Drawing.Point(581, 75);
+            this.lblRenavam.Location = new System.Drawing.Point(34, 250);
             this.lblRenavam.Name = "lblRenavam";
             this.lblRenavam.Size = new System.Drawing.Size(76, 17);
             this.lblRenavam.TabIndex = 5;
@@ -110,7 +113,7 @@
             this.lblCor.AutoSize = true;
             this.lblCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCor.ForeColor = System.Drawing.Color.White;
-            this.lblCor.Location = new System.Drawing.Point(611, 37);
+            this.lblCor.Location = new System.Drawing.Point(72, 215);
             this.lblCor.Name = "lblCor";
             this.lblCor.Size = new System.Drawing.Size(38, 17);
             this.lblCor.TabIndex = 4;
@@ -121,7 +124,7 @@
             this.txtPlaca.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPlaca.ForeColor = System.Drawing.Color.Black;
-            this.txtPlaca.Location = new System.Drawing.Point(198, 30);
+            this.txtPlaca.Location = new System.Drawing.Point(120, 102);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(194, 20);
             this.txtPlaca.TabIndex = 13;
@@ -131,7 +134,7 @@
             this.txtMarca.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMarca.ForeColor = System.Drawing.Color.Black;
-            this.txtMarca.Location = new System.Drawing.Point(198, 64);
+            this.txtMarca.Location = new System.Drawing.Point(120, 140);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(194, 20);
             this.txtMarca.TabIndex = 14;
@@ -141,9 +144,9 @@
             this.txtCor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCor.ForeColor = System.Drawing.Color.Black;
-            this.txtCor.Location = new System.Drawing.Point(667, 34);
+            this.txtCor.Location = new System.Drawing.Point(120, 212);
             this.txtCor.Name = "txtCor";
-            this.txtCor.Size = new System.Drawing.Size(188, 20);
+            this.txtCor.Size = new System.Drawing.Size(194, 20);
             this.txtCor.TabIndex = 16;
             // 
             // txtRenavam
@@ -151,9 +154,9 @@
             this.txtRenavam.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRenavam.ForeColor = System.Drawing.Color.Black;
-            this.txtRenavam.Location = new System.Drawing.Point(667, 68);
+            this.txtRenavam.Location = new System.Drawing.Point(120, 247);
             this.txtRenavam.Name = "txtRenavam";
-            this.txtRenavam.Size = new System.Drawing.Size(188, 20);
+            this.txtRenavam.Size = new System.Drawing.Size(194, 20);
             this.txtRenavam.TabIndex = 17;
             // 
             // btnSalvarCarro
@@ -163,7 +166,7 @@
             this.btnSalvarCarro.FlatAppearance.BorderSize = 0;
             this.btnSalvarCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvarCarro.ForeColor = System.Drawing.Color.White;
-            this.btnSalvarCarro.Location = new System.Drawing.Point(657, 172);
+            this.btnSalvarCarro.Location = new System.Drawing.Point(120, 422);
             this.btnSalvarCarro.Name = "btnSalvarCarro";
             this.btnSalvarCarro.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarCarro.TabIndex = 19;
@@ -178,7 +181,7 @@
             this.btnExcluirCarro.FlatAppearance.BorderSize = 0;
             this.btnExcluirCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluirCarro.ForeColor = System.Drawing.Color.White;
-            this.btnExcluirCarro.Location = new System.Drawing.Point(761, 172);
+            this.btnExcluirCarro.Location = new System.Drawing.Point(224, 422);
             this.btnExcluirCarro.Name = "btnExcluirCarro";
             this.btnExcluirCarro.Size = new System.Drawing.Size(75, 23);
             this.btnExcluirCarro.TabIndex = 20;
@@ -193,7 +196,7 @@
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.White;
-            this.lblCategoria.Location = new System.Drawing.Point(112, 139);
+            this.lblCategoria.Location = new System.Drawing.Point(34, 331);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(77, 17);
             this.lblCategoria.TabIndex = 24;
@@ -213,9 +216,9 @@
             "Passeio",
             "Caminhão",
             "Passageiros"});
-            this.ltModelo.Location = new System.Drawing.Point(198, 139);
+            this.ltModelo.Location = new System.Drawing.Point(120, 331);
             this.ltModelo.Name = "ltModelo";
-            this.ltModelo.Size = new System.Drawing.Size(120, 52);
+            this.ltModelo.Size = new System.Drawing.Size(120, 39);
             this.ltModelo.TabIndex = 27;
             // 
             // veiculoBindingSource
@@ -227,18 +230,48 @@
             this.txtAno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAno.ForeColor = System.Drawing.Color.Black;
-            this.txtAno.Location = new System.Drawing.Point(198, 94);
+            this.txtAno.Location = new System.Drawing.Point(120, 177);
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(194, 20);
             this.txtAno.TabIndex = 15;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Fira Code Retina", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(65, 255);
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(382, 97);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(937, 371);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.RowHeadersVisible = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Empty;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(660, 348);
             this.dataGridView1.TabIndex = 28;
             // 
             // controleCarroBindingSource

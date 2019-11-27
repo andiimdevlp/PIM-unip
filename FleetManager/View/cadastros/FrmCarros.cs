@@ -57,14 +57,13 @@ namespace View.cadastros
             {
                 txtPlaca.Text = dataGridView1.CurrentRow.Cells["placa"].Value.ToString();
                 txtRenavam.Text = dataGridView1.CurrentRow.Cells["renavam"].Value.ToString();
+                txtPlaca.ForeColor = Color.Transparent;
+                txtRenavam.ForeColor = Color.Transparent;
+
                 objetoControleCarro.ExcluirCarro(txtPlaca.Text, txtRenavam.Text);
-                MessageBox.Show("Veiculo excluido!");
+                MessageBox.Show("Veiculo excluido!\nApenas usuarios com super poderes\npodem restaura este veiculo!!\n'-'");
                 MostrarCarro();
 
-            }
-            else
-            {
-                MessageBox.Show("Selecione a linha que deseja excluir");
             }
             
             txtPlaca.Clear();

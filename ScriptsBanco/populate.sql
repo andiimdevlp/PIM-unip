@@ -11,7 +11,7 @@ insert into nat_gasto values
 ,('121','Pedagio')
 ,('190','Sinistro')
 
-select * from nat_gasto
+select  * from nat_gasto
 
 insert into departamento values
 ('COM','Comercial')
@@ -28,12 +28,12 @@ insert into departamento values
 select * from departamento
 
 insert into veiculo values
-('JBW8216','Passeio','Vermelho','1993','3420755920','Honda')
-,('IAH8249','Passeio','Preto','2001','89338666950','Fiat')
-,('HTV5326','Passageiros','Branco','1998','18201122378','Mercedes-Benz')
-,('HOO3762','Passageiros','Bege','1997','65118839513','Mercedes-Benz')
-,('GIT3912','Caminhão','Prata','1994','95401251396','Volvo')
-,('HTG8120','Caminhão','Prata','1998','22390235181','Volvo')
+('JBW8216','Passeio','Vermelho','1993','3420755920','Honda','')
+,('IAH8249','Passeio','Preto','2001','89338666950','Fiat','')
+,('HTV5326','Passageiros','Branco','1998','18201122378','Mercedes-Benz','')
+,('HOO3762','Passageiros','Bege','1997','65118839513','Mercedes-Benz','')
+,('GIT3912','Caminhão','Prata','1994','95401251396','Volvo','')
+,('HTG8120','Caminhão','Prata','1998','22390235181','Volvo','')
 
 CREATE PROC InserirCarro
 @placa varchar(10),
@@ -43,14 +43,23 @@ CREATE PROC InserirCarro
 @renavam varchar(30),
 @marca varchar(50)
 as
-insert into veiculo values (@placa, @modelo, @cor, @ano, @renavam, @marca)
+insert into veiculo values (@placa, @modelo, @cor, @ano, @renavam, @marca, '')
 go
+
+CREATE PROC ExcluirCarro
+@placa varchar(10),
+@renavam varchar(30)
+as
+update veiculo set D_E_L_E_T_E_ = '*' where placa = '' and renavam = ''
+
+go
+
 
 exec InserirCarro --'HTG8120','Caminhão','Prata','1998','22390235181','Volvo'
 
 CREATE PROC MostrarCarro
 as
-select * from veiculo
+select marca as MARCA, placa as PLACA, cor as COR, ano as ANO, renavam as RENAVAM, modelo as MODELO from veiculo where D_E_L_E_T_E_<>'*'
 go
 
 exec MostrarCarro

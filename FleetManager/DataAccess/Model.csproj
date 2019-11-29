@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DadosCarro.cs" />
+    <Compile Include="DadosBanco.cs" />
     <Compile Include="MailServer\MasterServerMail.cs" />
     <Compile Include="MailServer\SystemSuport.cs" />
     <Compile Include="SqlServer\Conexao.cs" />

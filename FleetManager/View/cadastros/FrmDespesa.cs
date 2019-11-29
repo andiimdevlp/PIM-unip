@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace View.cadastros
 {
     public partial class FrmDespesa : Form
     {
+        CrudBanco objetoFinanceiro = new CrudBanco();
         public FrmDespesa()
         {
             InitializeComponent();
@@ -20,6 +22,20 @@ namespace View.cadastros
         private void FrmDespesa_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void MostrarFinanceiro()
+        {
+            CrudBanco objetoFinan = new CrudBanco();
+            dtFinanceiro.DataSource = objetoFinan.MostrarFin();
+        }
+
+        private void btnGravarDespesa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
         }
     }
 }

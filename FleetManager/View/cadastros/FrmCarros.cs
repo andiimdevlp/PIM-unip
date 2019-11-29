@@ -13,7 +13,7 @@ namespace View.cadastros
 {
     public partial class FrmCarros : Form
     {
-        ControleCarro objetoControleCarro = new ControleCarro();
+        CrudBanco objetoControleCarro = new CrudBanco();
         public FrmCarros()
         {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace View.cadastros
         }
         private void MostrarCarro()
         {
-            ControleCarro objetoCarro = new ControleCarro();
+            CrudBanco objetoCarro = new CrudBanco();
             dataGridView1.DataSource = objetoCarro.MostrarCarro();
         }
 

@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnGravarDespesa = new System.Windows.Forms.Button();
             this.txtNatureza = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtFinanceiro = new System.Windows.Forms.DataGridView();
             this.btnExcluirDespesa = new System.Windows.Forms.Button();
             this.lblVencimento = new System.Windows.Forms.Label();
             this.lblEmissao = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             this.btnEstornar = new System.Windows.Forms.Button();
             this.txtDepartamento = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtFinanceiro)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -126,6 +126,7 @@
             this.btnGravarDespesa.TabIndex = 8;
             this.btnGravarDespesa.Text = "Gravar";
             this.btnGravarDespesa.UseVisualStyleBackColor = true;
+            this.btnGravarDespesa.Click += new System.EventHandler(this.btnGravarDespesa_Click);
             // 
             // txtNatureza
             // 
@@ -136,16 +137,16 @@
             this.txtNatureza.Size = new System.Drawing.Size(123, 20);
             this.txtNatureza.TabIndex = 9;
             // 
-            // dataGridView1
+            // dtFinanceiro
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dtFinanceiro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(56, 268);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(955, 354);
-            this.dataGridView1.TabIndex = 10;
+            this.dtFinanceiro.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dtFinanceiro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtFinanceiro.Location = new System.Drawing.Point(56, 268);
+            this.dtFinanceiro.Name = "dtFinanceiro";
+            this.dtFinanceiro.Size = new System.Drawing.Size(955, 354);
+            this.dtFinanceiro.TabIndex = 10;
             // 
             // btnExcluirDespesa
             // 
@@ -260,7 +261,7 @@
             this.Controls.Add(this.lblVencimento);
             this.Controls.Add(this.lblEmissao);
             this.Controls.Add(this.btnExcluirDespesa);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtFinanceiro);
             this.Controls.Add(this.txtNatureza);
             this.Controls.Add(this.btnGravarDespesa);
             this.Controls.Add(this.label4);
@@ -276,7 +277,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDespesa";
             this.Load += new System.EventHandler(this.FrmDespesa_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtFinanceiro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,7 +294,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnGravarDespesa;
         private System.Windows.Forms.TextBox txtNatureza;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtFinanceiro;
         private System.Windows.Forms.Button btnExcluirDespesa;
         private System.Windows.Forms.Label lblVencimento;
         private System.Windows.Forms.Label lblEmissao;

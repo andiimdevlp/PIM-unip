@@ -268,7 +268,6 @@
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowHeadersVisible = false;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Empty;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(660, 348);
@@ -276,7 +275,7 @@
             // 
             // controleCarroBindingSource
             // 
-            this.controleCarroBindingSource.DataSource = typeof(Control.ControleCarro);
+            this.controleCarroBindingSource.DataSource = typeof(Control.CrudBanco);
             // 
             // FrmCarros
             // 

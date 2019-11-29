@@ -7,7 +7,7 @@ using System;
 
 namespace Model
 {
-    public class CadastroCarro:Conexao
+    public class Cadastro:Conexao
     {
         private Conexao con = new Conexao();
 
@@ -56,5 +56,34 @@ namespace Model
 
         }
 
+        public DataTable MostrarFin()
+        {
+            cmd.Connection = con.AbrirConexao();
+            //cmd.CommandText = "select placa as PLACA, * from veiculo";
+            cmd.CommandText = "MostrarFin";
+            cmd.CommandType = CommandType.StoredProcedure;
+            ler = cmd.ExecuteReader();
+            tabela.Load(ler);
+            con.FecharConexao();
+            return tabela;
+        }
+
+        public void InsertFin(string departamento, string id_gasto, double valor, string emissao, string vencimento, string comentario, string placa, string descricao)
+        {
+            cmd.Connection = con.AbrirConexao();
+            cmd.CommandText = "InserirFinan";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@valor_financeiro", valor);
+            cmd.Parameters.AddWithValue("@id_gasto", id_gasto);
+            cmd.Parameters.AddWithValue("@data_emissao", emissao);
+            cmd.Parameters.AddWithValue("@data_vencimento", vencimento);
+            cmd.Parameters.AddWithValue("@id_depart", departamento);
+            cmd.Parameters.AddWithValue("@comentario", comentario);
+            cmd.Parameters.AddWithValue("@placa", placa);
+            cmd.ExecuteNonQuery();       
+            
+
+            cmd.Parameters.Clear();
+        }
     }
 }

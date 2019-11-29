@@ -9,9 +9,11 @@ using Model;
 
 namespace Control
 {
-    public class ControleCarro
+    public class CrudBanco
     {
-        private CadastroCarro objetodadosCarro = new CadastroCarro();
+        #region cadastro de veiculos
+
+        private Cadastro objetodadosCarro = new Cadastro();
 
         public DataTable MostrarCarro()
         {
@@ -28,5 +30,22 @@ namespace Control
         {
             objetodadosCarro.Excluir(placa, renavam);
         }
+
+        #endregion
+
+        private Cadastro objetoMoviFin = new Cadastro();
+
+        public DataTable MostrarFin()
+        {
+            DataTable tabela = new DataTable();
+            tabela = objetoMoviFin.Mostrar();
+            return tabela;
+        }
+
+        public void InsertFin(string departamento, string id_gasto, double valor, string emissao, string vencimento, string comentario, string placa, string descricao)
+        {
+            objetodadosCarro.InsertFin(departamento, id_gasto, valor, emissao, vencimento, baixa, comentario, placa, descricao);
+        }
+
     }
 }

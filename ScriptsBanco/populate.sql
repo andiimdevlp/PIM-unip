@@ -13,6 +13,7 @@ insert into nat_gasto values
 
 select  * from nat_gasto
 
+--Populanto departamentos
 insert into departamento values
 ('COM','Comercial')
 ,('CONT','Contabilidade')
@@ -27,6 +28,7 @@ insert into departamento values
 
 select * from departamento
 
+--Populando veiculos
 insert into veiculo values
 ('JBW8216','Passeio','Vermelho','1993','3420755920','Honda','')
 ,('IAH8249','Passeio','Preto','2001','89338666950','Fiat','')
@@ -70,4 +72,11 @@ insert into usuario values
 ,('edivan.costa',HASHBYTES('sha1','edmohamed'),'costa.santos@gmail.com','edivan dos santos costa','ADM')
 
 select * from usuario
+
+--Tabela de movimento financeiro
+
+select id_gasto NATUREZA, 
+(select abreviacao from departamento
+
+* from mov_fin
 

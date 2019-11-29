@@ -74,9 +74,35 @@ insert into usuario values
 select * from usuario
 
 --Tabela de movimento financeiro
+CREATE PROC MostrarFin
+as
+select id_gasto NATUREZA,
+(select descricao from nat_gasto, mov_fin where nat_gasto.id_gasto = mov_fin.id_gasto) DESCR, 
+(select abreviacao from departamento, mov_fin where id_departamento = id_depart) DEPARTAMENTO,
+placa PLACA,
+valor_financeiro VALOR,
+data_emissao EMISSÃO,
+data_vencimento VENCIMENTO,
+data_baixa PAGAMENTO,
+comentario MEMO from mov_fin where D_E_L_E_T_E_<>'*'
+go
 
-select id_gasto NATUREZA, 
-(select abreviacao from departamento
+exec MostrarFin
 
-* from mov_fin
 
+
+select * from mov_fin
+
+CREATE PROC InserirFinan
+@id_depart int,
+@id_gasto int,
+@valor_financeiro float,
+@data_emissao date,
+@data_vencimento date,
+@comentario text,
+@placa varchar(10)
+as 
+insert into mov_fin values (@id_gasto, @id_depart, @valor_financeiro, @data_emissao, @data_vencimento,'',@comentario, @placa,'' )
+go
+
+exec InserirFinan 

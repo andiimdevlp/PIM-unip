@@ -21,18 +21,18 @@ namespace Model
                     cmd.Connection = con;
                     cmd.Parameters.AddWithValue("@user", user);
                     cmd.Parameters.AddWithValue("@pass", pass);
-                    cmd.CommandText = "select HASHBYTES('sha1','@pass') from usuario where login=@user";
+                    cmd.CommandText = "select HASHBYTES('sha1','@pass'), * from usuario where login=@user";
                     cmd.CommandType = CommandType.Text;
                     SqlDataReader reader = cmd.ExecuteReader();
 
                     if (reader.HasRows)
                     {
-                        //while (reader.Read())
-                        //{
-                        //    UserLoginCache.NomeUsuario = reader.GetString(1);
-                        //    UserLoginCache.EmailUsuario = reader.GetString(3);
-                        //    UserLoginCache.NivelAcesso = reader.GetString(4);
-                        //}
+                        while (reader.Read())
+                        {
+                            UserLoginCache.NomeUsuario = reader.GetString(2);
+                            UserLoginCache.EmailUsuario = reader.GetString(4);
+                            UserLoginCache.NivelAcesso = reader.GetString(6);
+                        }
                         return true;
                     }
                     else

@@ -76,16 +76,20 @@ select * from usuario
 --Tabela de movimento financeiro
 CREATE PROC MostrarFin
 as
-select id_gasto NATUREZA,
-(select descricao from nat_gasto, mov_fin where nat_gasto.id_gasto = mov_fin.id_gasto) DESCR, 
-(select abreviacao from departamento, mov_fin where id_departamento = id_depart) DEPARTAMENTO,
+select nat.id_gasto NATUREZA,
+descricao DESCR,
+abreviacao DEPARTAMENTO,
 placa PLACA,
 valor_financeiro VALOR,
-data_emissao EMISSÃO,
-data_vencimento VENCIMENTO,
 data_baixa PAGAMENTO,
-comentario MEMO from mov_fin where D_E_L_E_T_E_<>'*'
+comentario MEMO
+from mov_fin fin
+left join nat_gasto nat on nat.id_gasto = fin.id_gasto
+left join departamento dep on id_departamento = id_depart 
+where 
+fin.D_E_L_E_T_E_<>'*'
 go
+
 
 exec MostrarFin
 
@@ -97,12 +101,10 @@ CREATE PROC InserirFinan
 @id_depart int,
 @id_gasto int,
 @valor_financeiro float,
-@data_emissao date,
-@data_vencimento date,
 @comentario text,
 @placa varchar(10)
 as 
-insert into mov_fin values (@id_gasto, @id_depart, @valor_financeiro, @data_emissao, @data_vencimento,'',@comentario, @placa,'' )
+insert into mov_fin values (@id_gasto, @id_depart, @valor_financeiro,'',@comentario, @placa,'' )
 go
 
 exec InserirFinan 

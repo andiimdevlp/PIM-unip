@@ -31,6 +31,7 @@ namespace Control
             objetodadosCarro.Excluir(placa, renavam);
         }
 
+
         #endregion
 
         private Cadastro objetoMoviFin = new Cadastro();
@@ -38,14 +39,24 @@ namespace Control
         public DataTable MostrarFin()
         {
             DataTable tabela = new DataTable();
-            tabela = objetoMoviFin.Mostrar();
+            tabela = objetoMoviFin.MostrarFin();
             return tabela;
         }
 
-        public void InsertFin(string departamento, string id_gasto, double valor, string emissao, string vencimento, string comentario, string placa, string descricao)
+        public void InsertFin(string valor, string departamento, string id_gasto, string comentario, string placa)
         {
-            objetodadosCarro.InsertFin(departamento, id_gasto, valor, emissao, vencimento, baixa, comentario, placa, descricao);
+            //string emissao = Convert.ToDateTime(emissao2).ToString("yyyy-MM-DD");
+            //string vencimento = Convert.ToDateTime(vencimento2).ToString("yyyy-MM-dd");
+            objetoMoviFin.InsertFin(valor, departamento, id_gasto, comentario, placa);
         }
 
+        public void BaixarFin(string valor)
+        {
+            objetoMoviFin.BaixarFin(Convert.ToInt32(valor));
+        }
+        public void EstornoFin(string valor, string comentario)
+        {
+            objetoMoviFin.EstornoFin(Convert.ToInt32(valor), comentario);
+        }
     }
 }

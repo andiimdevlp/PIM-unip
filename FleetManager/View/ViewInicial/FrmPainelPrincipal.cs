@@ -39,35 +39,35 @@ namespace View
             {
                 pnlMenuVertical.Width = 85;
                 Point Financeiro = new Point(12, 174);
-                Point Relatorio = new Point(12, 210);
+                //Point Relatorio = new Point(12, 210);
 
                 btnFinanceiro.Location = Financeiro;
-                btnRelatorio.Location = Relatorio;
+                //btnRelatorio.Location = Relatorio;
 
                 btnCadastroCarro.Visible = false;
                 btnCadastroContrato.Visible = false;
                 btnCadastroDespesa.Visible = false;
-                btnFinContasPagar.Visible = false;
-                btnFinSinistros.Visible = false;
-                btnRelGastoFrota.Visible = false;
+                //btnFinContasPagar.Visible = false;
+                //btnFinSinistros.Visible = false;
+                //btnRelGastoFrota.Visible = false;
 
             }
             else
             {
                 pnlMenuVertical.Width = 200;
 
-                Point Financeiro = new Point(12, 270);
-                Point Relatorio = new Point(12, 370);
+                Point Financeiro = new Point(12, 230);
+                //Point Relatorio = new Point(12, 370);
 
                 btnFinanceiro.Location = Financeiro;
-                btnRelatorio.Location = Relatorio;
+                //btnRelatorio.Location = Relatorio;
 
                 btnCadastroCarro.Visible = true;
                 btnCadastroContrato.Visible = true;
                 btnCadastroDespesa.Visible = true;
-                btnFinContasPagar.Visible = true;
-                btnFinSinistros.Visible = true;
-                btnRelGastoFrota.Visible = true;
+                //btnFinContasPagar.Visible = true;
+                //btnFinSinistros.Visible = true;
+                //btnRelGastoFrota.Visible = true;
             }
         }
         private void btnFechar_Click_1(object sender, EventArgs e)
@@ -97,11 +97,11 @@ namespace View
             lblCargoLogado.Text = UserLoginCache.NivelAcesso;
             lblEmailLogado.Text = UserLoginCache.EmailUsuario;
 
-            if(UserLoginCache.SexoUsuario == "M")
-            {
-                avatarMulher.Visible = true;
-                avatarHomen.Visible = false;
-            }
+            //if(UserLoginCache.SexoUsuario == "M")
+            //{
+            //    avatarMulher.Visible = true;
+            //    avatarHomen.Visible = false;
+            //}
         }
 
         //=====================================================================
@@ -144,6 +144,11 @@ namespace View
         private void btnCadastroDespesa_Click(object sender, EventArgs e)
         {
             AbrirFromulario<FrmDespesa>();
+        }
+
+        private void pnlMenuVertical_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

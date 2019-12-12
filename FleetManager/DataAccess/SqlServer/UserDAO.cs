@@ -57,9 +57,9 @@ namespace Model
 
                     if (reader.Read() == true)
                     {
-                        string userName = reader.GetString(1);
+                        string userName = reader.GetString(4);
                         string userMail = reader.GetString(3);
-                        string userPassword = reader.GetString(5); 
+                        string userPassword = reader.GetString(2); 
 
                         var mailService = new MailServer.SystemSuport();
                         mailService.sendMail(

@@ -181,6 +181,7 @@
             this.btnExcluirDespesa.TabIndex = 11;
             this.btnExcluirDespesa.Text = "Excluir";
             this.btnExcluirDespesa.UseVisualStyleBackColor = true;
+            this.btnExcluirDespesa.Click += new System.EventHandler(this.btnExcluirDespesa_Click);
             // 
             // btnBaixar
             // 

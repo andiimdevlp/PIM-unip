@@ -100,5 +100,14 @@ namespace Model
 
             cmd.Parameters.Clear();
         }
+
+        public void ExcluirFin(int valor, string Memo)
+        {
+            cmd.Connection = con.AbrirConexao();
+            cmd.CommandText = "update mov_fin set D_E_L_E_T_E_= '" + Memo + "' where id_financeiro ='" + valor + "'";
+            cmd.ExecuteNonQuery();
+
+            cmd.Parameters.Clear();
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,15 @@ namespace View.relatorios
 {
     public partial class FrmRelatorio : Form
     {
+        //CrudBanco objetoRelatorio = new CrudBanco();
         public FrmRelatorio()
         {
             InitializeComponent();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

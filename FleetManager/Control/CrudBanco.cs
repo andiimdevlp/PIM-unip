@@ -58,5 +58,10 @@ namespace Control
         {
             objetoMoviFin.EstornoFin(Convert.ToInt32(valor), comentario);
         }
+
+        public void ExcluirFin(string valor, string Memo)
+        {
+            objetoMoviFin.ExcluirFin(Convert.ToInt32(valor),Memo);
+        }
     }
 }

@@ -80,5 +80,22 @@ namespace View.cadastros
             }
             txtValorDespesa.Clear();
         }
+
+        private void btnExcluirDespesa_Click(object sender, EventArgs e)
+        {
+            if (dtFinanceiro.SelectedRows.Count > 0)
+            {
+                txtValorDespesa.Text = dtFinanceiro.CurrentRow.Cells["NUM"].Value.ToString();
+                string Memo = "*";
+
+                txtValorDespesa.ForeColor = Color.Transparent;
+                txtMemo.ForeColor = Color.Transparent;
+
+                objetoFinanceiro.ExcluirFin(txtValorDespesa.Text, Memo);
+                MessageBox.Show("Despesa excluida!\nApenas usuarios com super poderes\npodem restaura esta despesa!!\n'-'");
+                MostrarFinanceiro();
+            }
+            txtValorDespesa.Clear();
+        }
     }
 }
